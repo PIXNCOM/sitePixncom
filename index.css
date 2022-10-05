@@ -1,0 +1,7 @@
+     .flex-container {
+     display: flex;
+     align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
+     width: 90%;
+     height: 300px;
+     background-color: #1c87c9;
+     }
