@@ -1,9 +1,25 @@
      .flex-container {
-     display: flex;
-     align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
-     width: 90%;
-     height: 300px;
-     background-color: #1c87c9;
+     display: grid;
+     grid-gap: 15%;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(1, 100px);
+     align-items: center;
+     width: 80%;
+     height: 100px;
+     padding-left: 20%;
+     }
+
+     .panneau-web {
+       background: rgb(0, 165, 146);
+       text-align: center;
+     }
+
+     .panneau-graphique {
+       background: rgb(245, 176, 0);
+     }
+
+     .panneau-community {
+       background: rgb(252, 236, 180);
      }
 
      a {
@@ -70,7 +86,7 @@
        left: 5px;
        z-index: 1000;
      }
-     
+
      .titres {
        text-align: center;
        color: rgb(0, 165, 146);
@@ -86,9 +102,16 @@
 
      button {
        color : rgb(245, 176, 0);
-       padding : 10px;
+       padding : 10px 40px;
        font-size: 20px;
        background: white;
+       border-style: ridge;
+       border-width: 1px;
        border-color: rgb(245, 176, 0);
        border-radius: 50px;
+     }
+
+     img {
+       max-width: 100%;
+       height: auto;
      }
