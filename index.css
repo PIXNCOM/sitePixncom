@@ -1,3 +1,4 @@
+<<<<<<< HEAD
      .flex-container {
      display: grid;
      grid-gap: 15%;
@@ -85,8 +86,93 @@
        width: 100%;
        left: 5px;
        z-index: 1000;
+=======
+     #nos-service {
+     display: flex;
+     align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
+     width: 90%;
+     height: 300px;
+     background-color: ;
+>>>>>>> 29abca4a2775455772a493baf3254b19e256e98f
      }
 
+<<<<<<< HEAD
+     #fleche{
+      width: 100%;
+      height: auto;
+
+
+     }#flecheSeule{
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+
+
+     }
+
+     .contact{
+       text-align: center;
+
+     }
+     #div-contact {
+     display: flex;
+     align-items: center;
+     height: 600px;
+     background-color: ;
+     border: solid;
+     border-color: rgb(0, 164, 145);
+     margin-left: 6%;
+     margin-right: 6%;
+     padding-left: 10%;
+     padding-right: 10px;
+
+     }
+
+      .desQuestion{
+      text-align: center;
+      }
+     .contact-texte{
+       margin-left: 40px;
+     }
+     .horraire-semaine{
+       text-align: center;
+     }
+     h4{
+       color: rgb(245, 176, 0);
+       text-align: center;
+     }
+     #formulaire-contact{
+       width: 300px;
+       /*height: 200px;*/
+       margin-left: 50px;
+
+     }
+     .form-control{margin: 10px;
+        border: 1px solid rgb(0, 165, 146);
+        margin-block-start: auto;
+     }
+     #btn-envoi{margin-top: 10px;
+           --bs-btn-bg: rgb(0,165, 146);
+           --bs-btn-border-color: rgb(0,165, 146);
+     }
+     #div-footer {
+     display: flex;
+     align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
+     width: 90%;
+     height: 300px;
+     background-color: ;
+     margin-left: 50px;
+     }
+
+    #logo-footer{
+    width: 150px;
+    height: 100px;
+    }
+
+    #contact-footer{
+    margin-left: 125px;
+    }
+=======
      .titres {
        text-align: center;
        color: rgb(0, 165, 146);
@@ -110,8 +196,12 @@
        border-color: rgb(245, 176, 0);
        border-radius: 50px;
      }
+<<<<<<< HEAD
 
      img {
        max-width: 100%;
        height: auto;
      }
+=======
+>>>>>>> dev
+>>>>>>> 29abca4a2775455772a493baf3254b19e256e98f
