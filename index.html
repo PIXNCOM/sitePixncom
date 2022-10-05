@@ -20,13 +20,13 @@
     <li><a href="#contact">CONTACT</a></li>
 </ul>
       <h2>Nos services</h2>
-      <div class="flex-container">
+      <div class="flex-container" id="nos-service">
       <h3> développement web</h3>
-      <p> Un site internet sur mesure !<img src="Assets/FLECHE-SEULE.png"></p>
+      <p> Un site internet sur mesure !<img id="flecheSeule" src="Assets/FLECHE-SEULE.png"></p>
       <h3> création graphique</h3>
-      <p> Une identité unique et remarquable !<img src="Assets/FLECHE-SEULE.png"></p>
+      <p> Une identité unique et remarquable !<img id="flecheSeule" src="Assets/FLECHE-SEULE.png"></p>
       <h3> community manager</h3>
-      <p> Une communauté à votre image ! <img src="Assets/FLECHE-SEULE.png"></p>
+      <p> Une communauté à votre image ! <img id="flecheSeule" src="Assets/FLECHE-SEULE.png"></p>
 
     </div>
         <h2 id="notre-mission"> Notre mission</h2>
@@ -44,31 +44,43 @@
 </p></div>
 
       <h2 id="nous-choisir"> Les étapes clés de votre projet </h2>
-      <img src="Assets/flecheV2.png">
+        <img  id="fleche"src="Assets/flecheV2.png">
 
-      <p>
+          <p>
 
-    </p>
-    <h2 id="contact"> Contact </h2>
-    <div class="contact-texte">
-      <p> 37 rue Joseph Desaymard 63000 Clermont-Ferrand<br> Tél.: 07 66 54 51 72 <br>Mail : alissa.geslin@pixncom.com<br> <h3>HORAIRES</h3> <br> Lundi 9H-12H <br>du mardi au vendredi 9H-17H30</p>
+          </p>
+        <h2 class="contact"> Contact </h2>
 
-    </div>
-    <div class="formulaire">
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nom">
-  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Téléphone">
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
-</div>
-<div class="mb-3">
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Votre message"></textarea>
-</div>
-<div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Envoyer</button>
-  </div>
+          <div class="flex-container" id="div-contact">
+            <div class="maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.1612223690177!2d3.1288323161000506!3d45.767959121142916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71c38c2ad19ad%3A0xa6d4f21fdb1240ef!2s37%20Rue%20Joseph%20Desaymard%2C%2063000%20Clermont-Ferrand!5e0!3m2!1sfr!2sfr!4v1664969320032!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          <div class="contact-texte">
+            <p> 37 rue Joseph Desaymard 63000 Clermont-Ferrand<br> Tél.: 07 66 54 51 72 <br>Mail : alissa.geslin@pixncom.com <h4 class="horaires">HORAIRES</h4> <p class="horraire-semaine"> Lundi 9H-12H <br>du mardi au vendredi<br> 9H-17H30
+            </p>
+          </div>
+        <div id="formulaire-contact">
+          <div class="formulaire">
+            <p class="desQuestion"> <img id="flecheSeule" src="Assets/FLECHE-SEULE.png">Des question, un projet ?<br> prenons un café et parlons-en
+            <input type="text" class="form-control" id="nom" placeholder="Nom">
+            <input type="text" class="form-control" id="telephone" placeholder="Téléphone">
+            <input type="email" class="form-control" id="mail" placeholder="Mail">
+          </div>
+            <textarea class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
+            <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
+        </div>
+      </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
     <footer>
-      <img src="Assets/LOGO-RVB.png">
-      <p> 37 rue Joseph Desaymard <br> 63000 Clermont-Ferrand<br> Tél.: 09 54 46 43 58 <br>Mail : contact@inserfac.com<br> www.inserfac.com
+      <hr size="8" color="0, 164, 145">
+        <div class="flex-container" id="div-footer">
+          <div >
+            <img id="logo-footer"src="Assets/LOGO-RVB.png" >
+          </div>
+        <div id="contact-footer">
+          <p> 37 rue Joseph Desaymard <br> 63000 Clermont-Ferrand<br> Tél.: 09 54 46 43 58 <br>Mail : contact@inserfac.com<br> www.inserfac.com
+        </div>
+      </div>
     </footer>
 </html>
