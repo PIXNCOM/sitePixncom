@@ -108,6 +108,7 @@
      display: flex;
      align-items: center;
      height: 600px;
+     width: auto;
      background-color: ;
      border: solid;
      border-color: rgb(0, 164, 145);
@@ -117,24 +118,26 @@
      padding-right: 10px;
 
      }
+     .maps{margin-left: -130px}
 
       .desQuestion{
       text-align: center;
       }
      .contact-texte{
-       margin-left: 40px;
+       margin-left: -50px;
      }
      .horraire-semaine{
        text-align: center;
      }
-     h4{
+     .horaires{
        color: rgb(245, 176, 0);
        text-align: center;
      }
      #formulaire-contact{
-       min-width: 300px;
+       min-width: 500px;
        /*height: 200px;*/
-       margin-left: 50px;
+       margin-left: -50px;
+       padding-right: 50px;
        align-items: right;
 
      }
@@ -144,6 +147,7 @@
         align-items: right;
      }
      #btn-envoi{margin-top: 10px;
+       margin-left: 10px;
            --bs-btn-bg: rgb(0,165, 146);
            --bs-btn-border-color: rgb(0,165, 146);
      }
