@@ -423,3 +423,23 @@
        margin-left: 50px;
        }
      }
+
+
+
+
+
+        /*css pour page community manager*/
+
+        .texte-community{
+          text-align: center;
+
+        }
+
+        .flecheCom{
+          height: 100px;
+          width: 100px;
+        }
+        .nos-realisation{
+          text-align: center;
+          color: black;
+        }
