@@ -3,9 +3,8 @@
      grid-gap: 18%;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(1, 300px);
-     width: 90%;
      height: 450px;
-     padding-left: 10%;
+     padding: 0 5%;
      padding-top: 40px;
      }
 
@@ -291,6 +290,7 @@
         height: 75px;
      }
 
+<<<<<<< HEAD
      @media screen and (min-width: 400px) {
        #div-contact {
        display: flex;
@@ -333,3 +333,22 @@
          height: 250px;
        }
   }
+=======
+     #flex-mission{
+       display: flex;
+       flex-direction: row;
+       height: auto;
+       padding: 2% 20%;
+     }
+
+     .img-ampoule{
+       width: 50%;
+       height: auto;
+     }
+
+     .texte-mission{
+       padding-top: 5%;
+       justify-content: center;
+       align-items: center;
+     }
+>>>>>>> dev
