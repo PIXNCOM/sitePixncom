@@ -151,8 +151,8 @@
      border: solid;
      border-color: rgb(0, 164, 145);
      margin-left: 6%;
-     margin-right: 6%;
-     padding-left: 10%;
+     margin-right: 5%;
+     padding-left: 7%;
      padding-right: 10px;
 
      }
@@ -162,8 +162,25 @@
       text-align: center;
       }
      .contact-texte{
-       margin-left: -50px;
+       margin-left: -200px;
+       width: auto;
+       text-align: center;
      }
+     .pointer{
+       margin-right: 10px;
+     }
+    .icon-tel{
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      text-align: left;
+    }
+    .icon-mail{
+      width: 24px;
+      height: 24px;
+      margin-right: 9px;
+      text-align: left;
+    }
      .horraire-semaine{
        text-align: center;
      }
