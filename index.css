@@ -316,50 +316,6 @@
         height: 75px;
      }
 
-<<<<<<< HEAD
-     @media screen and (min-width: 400px) {
-       #div-contact {
-       display: flex;
-       align-items: center;
-       height: 600px;
-       width: 650px;
-       background-color: ;
-       border: solid;
-       border-color: rgb(0, 164, 145);
-       margin-left: 19%;
-       margin-right: 5%;
-       padding-left: 7%;
-       padding-right: 10px;
-       box-shadow: 10px 5px 5px rgb(192,192,192);
-       flex-direction: column-reverse;
-       flex-wrap: wrap;
-       }
-       .contact-texte{
-         margin-left: -200px;
-         width: 300px;
-         height: 150px;
-         text-align: center;
-         margin:auto;
-       }
-       #formulaire-contact{
-         min-width: 300px;
-         height: auto;
-         /*height: 200px;*/
-         margin-left: -50px;
-         padding-right: 50px;
-         align-items: right;
-
-       }
-       .maps{
-         width: 200px;
-         height: 200px;
-       }
-       iframe{
-         width: 250px;
-         height: 250px;
-       }
-  }
-=======
      #flex-mission{
        display: flex;
        flex-direction: row;
@@ -378,10 +334,6 @@
        align-items: center;
        margin: auto;
      }
-<<<<<<< HEAD
->>>>>>> dev
-=======
-
 
      @media screen and (max-width: 800px){
        .panneau-graphique{
@@ -391,5 +343,39 @@
        .maps{
          display: none;
        }
+
+       #div-contact {
+       display: flex;
+       align-items: center;
+       height: 600px;
+       width: 650px;
+       background-color: ;
+       border: solid;
+       border-color: rgb(0, 164, 145);
+       margin-left: 19%;
+       margin-right: 5%;
+       padding-left: 7%;
+       padding-right: 10px;
+       box-shadow: 10px 5px 5px rgb(192,192,192);
+       flex-direction: column-reverse;
+       flex-wrap: wrap;
+       }
+
+       .contact-texte{
+         margin-left: -200px;
+         width: 300px;
+         height: 150px;
+         text-align: center;
+         margin:auto;
+       }
+
+       #formulaire-contact{
+         min-width: 300px;
+         height: auto;
+         /*height: 200px;*/
+         margin-left: -50px;
+         padding-right: 50px;
+         align-items: right;
+
+       }
      }
->>>>>>> 257f08f96367955439f51f67b06cd2946e1f3e55
