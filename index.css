@@ -10,11 +10,15 @@
      }
 
      .panneau-web {
-       text-align: center;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       text-decoration: none;
      }
 
      .panneau-web:hover{
        background: rgb(0, 165, 146);
+       color: white;
      }
 
      .panneau-web a{
@@ -23,12 +27,15 @@
      }
 
      .panneau-graphique{
-       text-align: center;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       text-decoration: none;
      }
 
      .panneau-graphique:hover{
        background: rgb(245, 176, 0);
-       text-align: center;
+       color: white;
      }
 
      .panneau-graphique a{
@@ -37,11 +44,15 @@
      }
 
      .panneau-community {
-       text-align: center;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       text-decoration: none;
      }
 
      .panneau-community:hover{
        background: rgb(252, 236, 180);
+       color: white;
      }
 
      .panneau-community a{
@@ -209,14 +220,19 @@
      }
 
      a.button {
-       color : rgb(245, 176, 0);
+       color : black;
        padding : 10px 40px;
        font-size: 20px;
        background: white;
        border-style: ridge;
        border-width: 1px;
-       border-color: rgb(245, 176, 0);
+       border-color: black;
        border-radius: 50px;
+     }
+
+     a.button:hover{
+       color : rgb(245, 176, 0);
+       border-color: rgb(245, 176, 0);
      }
 
      img {
@@ -224,13 +240,29 @@
        height: auto;
      }
 
-     .vert-center{
-       position: relative;
-       top: 0;
-       bottom: 0;
-       right: 0;
-       left: 0;
+     .title-pannel{
+       display: flex;
+       height: 30%;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .text-pannel{
        display: flex;
        justify-content: center;
        align-items: center;
+       height: 20%;
+     }
+
+     .logo-pannel{
+       display: flex;
+       height: 50%;
+       justify-content: center;
+       align-items: end;
+       padding-bottom: 15px;
+     }
+
+     #fleche-pannel{
+        width: 75px;
+        height: 75px;
      }
