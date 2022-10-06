@@ -3,12 +3,42 @@
       src: url('Assets/TYPO/TSTAR-Regular.otf') format('opentype')
     }
 
-      body {
+       body {
         font-family: 'TSTAR', sans-serif;
+        font-size: 120%;
+      }
+      h1 {
+        font-size: 550%;
       }
 
       h2 {
           font-size: 400%;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: column;
+        height: 1200px;
+        background-image: url('IMG/IMG_HEADER.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        text-align: center;
+      }
+
+      #logo{
+        display: block;
+        width: 17%;
+        align-content: start;
+        justify-content: start;
+        padding: 3%;
+      }
+
+      #text-header{
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        margin : auto;
+        padding-top: 5%;
       }
 
      .flex-container {
@@ -95,6 +125,7 @@
        justify-content: right;
        margin-left: auto;
        top: 0px;
+       font-size: 150%;
      }
 
      nav ul {
@@ -144,9 +175,9 @@
 
      .sousmenu {
        display: none;
+       font-size: 75%;
        position: absolute;
        width: 100%;
-       left: 5px;
        z-index: 1000;
      }
 
@@ -262,10 +293,11 @@
 
      .bouton-contact{
        display: flex;
-       align-items: center;
+       align-items: end;
        justify-content: center;
        border: 2px;
-       height: 200px;
+       height: 30%;
+       padding-bottom: 5%;
      }
 
      a.button {
