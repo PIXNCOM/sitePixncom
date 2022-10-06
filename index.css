@@ -336,10 +336,45 @@
      }
 
      @media screen and (max-width: 800px){
-       .panneau-graphique{
-         border-color: black;
+
+       h2 {
+         font-size: 200%;
        }
 
+       nav {
+         width: 100%;
+         display : flex;
+         justify-content: right;
+         margin-left: auto;
+         top: 0px;
+       }
+
+       .flex-container {
+       display: grid;
+       grid-gap: 5%;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(1, 300px);
+       height: 450px;
+       padding: 0 5%;
+       padding-top: 40px;
+       }
+
+       #flex-mission{
+         padding: 2% 5%;
+         gap: 5%;
+       }
+
+       .img-ampoule{
+         width: 100%;
+         height: auto;
+         margin: auto;
+       }
+
+       .texte-mission{
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+       }
        .maps{
          display: none;
        }
