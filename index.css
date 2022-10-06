@@ -1,10 +1,23 @@
+    @font-face{
+      font-family: 'TSTAR';
+      src: url('Assets/TYPO/TSTAR-Regular.otf') format('opentype')
+    }
+
+      body {
+        font-family: 'TSTAR', sans-serif;
+      }
+
+      h2 {
+          font-size: 400%;
+      }
+
      .flex-container {
      display: grid;
      grid-gap: 18%;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(1, 300px);
      height: 450px;
-     padding: 0 5%;
+     padding: 0 15%;
      padding-top: 40px;
      }
 
@@ -13,6 +26,9 @@
        flex-direction: column;
        height: 100%;
        text-decoration: none;
+       border-color: black;
+       border-style: ridge;
+       border-width: 1px;
      }
 
      .panneau-web:hover{
@@ -30,11 +46,15 @@
        flex-direction: column;
        height: 100%;
        text-decoration: none;
+       border-color: rgb(200,230,232);
+       border-style: solid;
+       border-width: 3px;
      }
 
      .panneau-graphique:hover{
        background: rgb(245, 176, 0);
        color: white;
+       border-style: none;
      }
 
      .panneau-graphique a{
@@ -339,6 +359,7 @@
        flex-direction: row;
        height: auto;
        padding: 2% 20%;
+       gap: 10%;
      }
 
      .img-ampoule{
@@ -347,8 +368,8 @@
      }
 
      .texte-mission{
-       padding-top: 5%;
        justify-content: center;
        align-items: center;
+       margin: auto;
      }
 >>>>>>> dev
