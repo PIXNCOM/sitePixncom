@@ -154,6 +154,7 @@
      margin-right: 5%;
      padding-left: 7%;
      padding-right: 10px;
+     box-shadow: 10px 5px 5px rgb(192,192,192);
 
      }
      .maps{margin-left: -130px}
@@ -188,6 +189,9 @@
        color: rgb(245, 176, 0);
        text-align: center;
      }
+     .placeholder{
+       color: rgb(0, 165, 146);
+     }
      #formulaire-contact{
        min-width: 500px;
        /*height: 200px;*/
@@ -200,6 +204,9 @@
         border: 1px solid rgb(0, 165, 146);
         margin-block-start: auto;
         align-items: right;
+     }
+     #nom{
+       color: rgb(0, 165, 146);
      }
      #btn-envoi{margin-top: 10px;
        margin-left: 10px;
@@ -221,7 +228,7 @@
     }
 
     #contact-footer{
-    margin-left: 125px;
+  /*  margin-left: 125px;*/
     }
      .titres {
        text-align: center;
@@ -283,3 +290,46 @@
         width: 75px;
         height: 75px;
      }
+
+     @media screen and (min-width: 400px) {
+       #div-contact {
+       display: flex;
+       align-items: center;
+       height: 600px;
+       width: 650px;
+       background-color: ;
+       border: solid;
+       border-color: rgb(0, 164, 145);
+       margin-left: 19%;
+       margin-right: 5%;
+       padding-left: 7%;
+       padding-right: 10px;
+       box-shadow: 10px 5px 5px rgb(192,192,192);
+       flex-direction: column-reverse;
+       flex-wrap: wrap;
+       }
+       .contact-texte{
+         margin-left: -200px;
+         width: 300px;
+         height: 150px;
+         text-align: center;
+         margin:auto;
+       }
+       #formulaire-contact{
+         min-width: 300px;
+         height: auto;
+         /*height: 200px;*/
+         margin-left: -50px;
+         padding-right: 50px;
+         align-items: right;
+
+       }
+       .maps{
+         width: 200px;
+         height: 200px;
+       }
+       iframe{
+         width: 250px;
+         height: 250px;
+       }
+  }
