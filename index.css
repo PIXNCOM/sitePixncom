@@ -378,4 +378,18 @@
        align-items: center;
        margin: auto;
      }
+<<<<<<< HEAD
 >>>>>>> dev
+=======
+
+
+     @media screen and (max-width: 800px){
+       .panneau-graphique{
+         border-color: black;
+       }
+
+       .maps{
+         display: none;
+       }
+     }
+>>>>>>> 257f08f96367955439f51f67b06cd2946e1f3e55
