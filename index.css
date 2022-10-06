@@ -327,3 +327,14 @@
        align-items: center;
        margin: auto;
      }
+
+
+     @media screen and (max-width: 800px){
+       .panneau-graphique{
+         border-color: black;
+       }
+
+       .maps{
+         display: none;
+       }
+     }
