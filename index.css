@@ -213,13 +213,13 @@
      box-shadow: 10px 5px 5px rgb(192,192,192);
 
      }
-     .maps{margin-left: -112px}
+     .maps{margin-left: -130px}
 
       .desQuestion{
       text-align: center;
       }
      .contact-texte{
-       margin-left: -160px;
+       margin-left: -200px;
        width: auto;
        text-align: center;
      }
@@ -421,7 +421,7 @@
        border-color: rgb(0, 164, 145);
        /*margin-left: 19%;*/
        margin-right: 5%;
-       padding-left: 5%;
+       padding-left: 7%;
        padding-right: 10px;
        box-shadow: 10px 5px 5px rgb(192,192,192);
        flex-direction: column-reverse;
@@ -429,19 +429,18 @@
        }
 
        .contact-texte{
-         margin-left: -150px;
+         margin-left: -200px;
          width: 300px;
          /*height: 150px;*/
          text-align: center;
-         margin-bottom: 125px;
-         margin-left: 0px;
+         margin:auto;
        }
 
        #formulaire-contact{
          min-width: 300px;
          height: auto;
          /*height: 200px;*/
-         /*margin-left: -90px;*/
+         margin-left: -90px;
          padding-right: 50px;
          align-items: right;
 
