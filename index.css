@@ -495,13 +495,14 @@
           padding-bottom: 5%;
           color: rgb(0, 165, 146);
         }
+
         /*css pour page creation graphique/*/
 
         #header-graphique {
           display: flex;
           flex-direction: column;
           height: 1200px;
-          background-image: url('IMG/IMG_headerP4.jpg');
+          background-image: url('IMG/IMG_headerP3.jpg');
           background-repeat: no-repeat;
           background-size: 100% auto;
           text-align: center;
@@ -518,6 +519,58 @@
         }
 
         .flechegraphisme{
+          height: 80px;
+          width: 80px;
+          margin-right: 40px;
+          margin-top: 20px;
+
+        }
+        .nos-realisation{
+          text-align: center;
+          color: black;
+          margin-top: 40px;
+        }
+        .realisation{
+          width: 80%;
+          height: 40%;
+          background-color: #fff;
+          display: flex;
+          margin-left: 10%;
+        }
+        .bouton-contact-bas{
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          border: 2px;
+          border-color: rgb(0, 165, 146);
+          height: 30%;
+          padding-bottom: 5%;
+          color: rgb(0, 165, 146);
+        }
+
+        /*css pour page creation developpement/*/
+
+        #header-developpement {
+          display: flex;
+          flex-direction: column;
+          height: 1200px;
+          background-image: url('IMG/IMG_headerP2.jpg');
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          text-align: center;
+        }
+        .texte-developpement{
+          text-align: justify;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+          margin-top: 20px;
+
+        }
+
+        .flecheDeveloppement{
           height: 80px;
           width: 80px;
           margin-right: 40px;
