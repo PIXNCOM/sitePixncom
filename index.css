@@ -7,18 +7,38 @@
         font-family: 'TSTAR', sans-serif;
         font-size: 120%;
       }
+
       h1 {
-        font-size: 550%;
+        font-size: 5vw;
       }
 
       h2 {
-          font-size: 400%;
+        font-size: 3vw;
+      }
+
+      h3 {
+        font-size: 1.3vw;
+        margin-bottom: 2em;
+      }
+
+      h4{
+        font-weight: 500;
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 0.85vw;
+        margin-bottom: 1em;
+      }
+
+      .responsive {
+        max-width: 100%;
+        height : auto;
       }
 
       #header {
         display: flex;
         flex-direction: column;
-        height: 1200px;
+        height: 100vh;
         background-image: url('IMG/IMG_HEADER.jpg');
         background-repeat: no-repeat;
         background-size: 100% auto;
@@ -41,7 +61,7 @@
         padding-top: 5%;
       }
 
-      #notre-mission {
+      #services {
         padding-top: 3%;
       }
 
@@ -50,27 +70,26 @@
      grid-gap: 18%;
      grid-template-columns: repeat(3, 1fr);
      grid-template-rows: repeat(1, 300px);
-     height: 450px;
-     padding: 0 15%;
-     padding-top: 40px;
+     height: 40vh;
+     padding: 3% 15%;
      }
 
-     .panneau-mission {
+     .panneau-service {
        display: flex;
        flex-direction: column;
-       height: 100%;
+       height: 30vh;
        text-decoration: none;
        border-color: rgb(200,230,232);
        border-style: solid;
        border-width: 3px;
      }
 
-     .panneau-mission:hover {
+     .panneau-service:hover {
        color: white;
        border-style: none;
      }
 
-     .panneau-mission a {
+     .panneau-service a {
        color: inherit;
        text-decoration: none;
      }
@@ -100,7 +119,7 @@
        margin-left: auto;
        top: 10%;
        right: 0px;
-       font-size: 150%;
+       font-size: 1.5vw;
      }
 
      nav ul {
@@ -151,7 +170,7 @@
 
      .sousmenu {
        display: none;
-       font-size: 75%;
+       font-size: 0.9vw;
        position: absolute;
        width: 100%;
        z-index: 1000;
@@ -160,14 +179,12 @@
      #fleche{
       width: 100%;
       height: auto;
+     }
 
-
-     }#flecheSeule{
+     #flecheSeule{
       width: 50px;
       height: 50px;
       margin-right: 5px;
-
-
      }
 
      .contact{
@@ -268,6 +285,7 @@
      }
 
      .bouton-contact{
+       float: none;
        display: flex;
        align-items: end;
        justify-content: center;
@@ -277,8 +295,11 @@
      }
 
      a.button {
+       height: 5vh;
+       width: 18vw;
        color : black;
        padding : 10px 40px;
+       padding-top: 1.1vh;
        background: white;
        border-style: ridge;
        border-width: 1px;
@@ -298,16 +319,20 @@
 
      .title-pannel{
        display: flex;
-       height: 30%;
+       height: 40%;
+       text-align: center;
        justify-content: center;
        align-items: center;
+       padding-bottom: 10%;
      }
 
      .text-pannel{
        display: flex;
+       text-align: center;
        justify-content: center;
        align-items: center;
-       height: 20%;
+       height: 10%;
+       padding: 0 25%;
      }
 
      .logo-pannel{
@@ -319,8 +344,8 @@
      }
 
      #fleche-pannel{
-        width: 75px;
-        height: 75px;
+        width: 2.5vw;
+        height: auto;
      }
 
      #flex-mission{
@@ -334,26 +359,30 @@
      .img-ampoule{
        width: 50%;
        height: auto;
+       flex: 1 1 0px;
      }
 
      .texte-mission{
        justify-content: center;
        align-items: center;
        margin: auto;
+       flex: 1 1 0px;
      }
 
      @media screen and (max-width: 800px){
 
-       #text-header{
-         font-size: 40%;
-       }
-
-       h2 {
-         font-size: 200%;
-       }
-
        #header {
          height: auto;
+       }
+
+       a.button {
+         height: 2vh;
+         width: 25vw;
+         margin-bottom: 0;
+         padding : 0 0;
+         font-size: 0.9vh;
+         text-align: center;
+         padding-top: 0.3vh;
        }
 
        nav {
@@ -362,17 +391,33 @@
          display : flex;
          justify-content: right;
          margin-left: auto;
-         font-size: 75%;
        }
 
        .flex-container {
-       display: grid;
-       grid-gap: 5%;
-       grid-template-columns: repeat(3, 1fr);
-       grid-template-rows: repeat(1, 300px);
-       height: 450px;
-       padding: 0 5%;
-       padding-top: 40px;
+         height: 25vh;
+         grid-gap: 5%;
+         padding: 0 5%;
+         margin-top: 2%;
+       }
+
+       .panneau-service {
+         height: 20vh;
+       }
+
+       .text-pannel {
+         padding-top: 10%;
+       }
+
+       h3 {
+         font-size: 1vh;
+       }
+
+       h4 {
+         font-size: 0.9vh;
+       }
+
+       p {
+         font-size: 0.85vh;
        }
 
        #flex-mission{
