@@ -489,6 +489,11 @@
          text-align: center;
          color: rgb(0, 165, 146);
        }
+     }@media screen and (max-width: 425px){
+
+     }
+     @media screen and (max-width: 375px){
+
      }
 
 
@@ -592,6 +597,38 @@
           }
         }
 
+        @media screen and (max-width: 425px){
+        }
+        .texte-community{
+          text-align: justify;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          align-items: center;
+          align-content: center;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        .flecheCom{
+          height: 80px;
+          width: 80px;
+          margin-right: 65px;
+          margin-top: 20px;
+        }
+        }
+        @media screen and (max-width: 375px){
+          .texte-community{
+            text-align: justify;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            margin-top: 20px;
+            margin-left: 40px;
+          }
+        }
+
         /*css pour page creation graphique/*/
 
         #header-graphique {
@@ -670,7 +707,6 @@
             width: 80px;
             margin-right: 120px;
             margin-top: 20px;
-
           }
           .realisation{
             width: 80%;
@@ -688,6 +724,28 @@
             padding-bottom: 5%;
             color: rgb(0, 165, 146);
           }
+        }
+
+        @media screen and (max-width: 425px){
+          .texte-graphisme{
+            text-align: justify;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            margin-top: 20px;
+            margin-left: 10px;
+          }
+          .flechegraphisme{
+            height: 80px;
+            width: 80px;
+            margin-right: 70px;
+            margin-top: 20px;
+          }
+        }
+        @media screen and (max-width: 375px){
+
         }
 
         /*css pour page creation developpement/*/
@@ -801,5 +859,26 @@
             height: 15%;
             color: rgb(0, 165, 146);
           }
+        }
+
+        @media screen and (max-width: 425px){
+          .texte-developpement{
+            text-align: justify;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+          .flecheDeveloppement{
+            height: 80px;
+            width: 80px;
+            margin-right: 90px;
+            margin-top: 20px;
+          }
+        }
+        @media screen and (max-width: 375px){
 
         }
