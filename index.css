@@ -41,6 +41,10 @@
         padding-top: 5%;
       }
 
+      #notre-mission {
+        padding-top: 3%;
+      }
+
      .flex-container {
      display: grid;
      grid-gap: 18%;
@@ -51,7 +55,7 @@
      padding-top: 40px;
      }
 
-     .panneau-web {
+     .panneau-mission {
        display: flex;
        flex-direction: column;
        height: 100%;
@@ -61,57 +65,26 @@
        border-width: 3px;
      }
 
-     .panneau-web:hover{
-       background: rgb(0, 165, 146);
+     .panneau-mission:hover {
        color: white;
        border-style: none;
      }
 
-     .panneau-web a{
+     .panneau-mission a {
        color: inherit;
        text-decoration: none;
      }
 
-     .panneau-graphique{
-       display: flex;
-       flex-direction: column;
-       height: 100%;
-       text-decoration: none;
-       border-color: rgb(200,230,232);
-       border-style: solid;
-       border-width: 3px;
+     #panneau-web:hover{
+       background: rgb(0, 165, 146);
      }
 
-     .panneau-graphique:hover{
+     #panneau-graphique:hover{
        background: rgb(245, 176, 0);
-       color: white;
-       border-style: none;
      }
 
-     .panneau-graphique a{
-         color: inherit;
-         text-decoration: none;
-     }
-
-     .panneau-community {
-       display: flex;
-       flex-direction: column;
-       height: 100%;
-       text-decoration: none;
-       border-color: rgb(200,230,232);
-       border-style: solid;
-       border-width: 3px;
-     }
-
-     .panneau-community:hover{
+     #panneau-community:hover{
        background: rgb(252, 236, 180);
-       color: white;
-       border-style: none;
-     }
-
-     .panneau-community a{
-         color: inherit;
-         text-decoration: none;
      }
 
      a {
@@ -120,11 +93,13 @@
      }
 
      nav {
+       position: fixed;
        width: 50%;
        display : flex;
        justify-content: right;
        margin-left: auto;
-       top: 0px;
+       top: 10%;
+       right: 0px;
        font-size: 150%;
      }
 
@@ -135,7 +110,7 @@
 
      nav ul li {
        float: left;
-       min-width: 150px;
+       margin : 10px;
        text-align: center;
        position: relative;
      }
@@ -167,6 +142,7 @@
 
      nav > ul li:hover .sousmenu {
        display: block;
+       right: 40px;
      }
 
      .sousmenu a:hover {
@@ -297,13 +273,12 @@
        justify-content: center;
        border: 2px;
        height: 30%;
-       padding-bottom: 5%;
+       margin-bottom: 2%;
      }
 
      a.button {
        color : black;
        padding : 10px 40px;
-       font-size: 20px;
        background: white;
        border-style: ridge;
        border-width: 1px;
@@ -369,16 +344,25 @@
 
      @media screen and (max-width: 800px){
 
+       #text-header{
+         font-size: 40%;
+       }
+
        h2 {
          font-size: 200%;
        }
 
+       #header {
+         height: auto;
+       }
+
        nav {
-         width: 100%;
+         width: 70%;
+         top: 4%;
          display : flex;
          justify-content: right;
          margin-left: auto;
-         top: 0px;
+         font-size: 75%;
        }
 
        .flex-container {
