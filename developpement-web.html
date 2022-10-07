@@ -1,18 +1,65 @@
 <html>
     <head>
-        <title>Une page HTML vierge</title>
+        <title>Développement Web</title>
         <meta charset="utf-8" />
+        <link rel="icon" href="Assets/FLECHE-SEULE.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
+      <body style=background-color:rgb(237,240,242)>
+        <nav class="flex-menus">
+          <ul>
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li class="menu-deroulant">SERVICES
+              <ul class="sousmenu">
+                <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
+                <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
+                <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
+              </ul>
+            </li>
+            <li><a href="#nous-choisir">NOUS CHOISIR</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div id="header-developpement">
+          <img id="logo" src="Assets/LOGO-RVB.png">
+          <div id="text-header">
+             <h1><b>DÉVELOPPEMENT WEB</b></h1>
+           </div>
+          <div class="bouton-contact-bas">
+            <a href="index.html#contact" class="button"> NOUS CONTACTER </a>
+          </div>
+        </div>
+        <div class="nos_prestation_developpement">
+          <h2 class="titres"> <b> NOS PRESTATIONS EN WEBDESIGN</b></h2>
+          <div class="texte-developpement">
+            <p>Création sites vitrines<br>Créations sites e-commerce <br>
+              Optimisation et refonte de sites web<br> Éco-conception de sites web <br> Hébergement et maintenance <br>
+              Référencement SEO <br> UI/UX Design
+            </p>
+            <img class="flecheDeveloppement"src="Assets/FLECHE-SEULE.png">
+          </div>
+        <div id="nos-realisation">
+            <h2 class="nos-realisation"> nos réalisations</h2>
+            <div class="realisation">
 
-
+            </div>
+            <div class="bouton-contact-bas">
+              <a href="index.html#contact" class="button"> NOUS CONTACTER </a>
+            </div>
+        </div>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 
     <footer>
-      <img src="Assets/LOGO-RVB.png">
-      <p> 37 rue Joseph Desaymard <br> 63000 Clermont-Ferrand<br> Tél.: 09 54 46 43 58 <br>Mail : contact@inserfac.com<br> www.inserfac.com
-    </footer>
+      <hr size="8" color="0, 164, 145">
+        <div class="flex-container" id="div-footer">
+          <div >
+            <img id="logo-footer"src="Assets/LOGO-RVB.png" >
+          </div>
+        <div id="contact-footer">
+          <p> 37 rue Joseph Desaymard <br> 63000 Clermont-Ferrand<br> Tél.: 09 54 46 43 58 <br>Mail : contact@inserfac.com<br> www.inserfac.com
+        </div>
+      </div></footer>
 </html>
