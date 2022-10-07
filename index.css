@@ -534,7 +534,7 @@
         .nos-realisation{
           text-align: center;
           color: black;
-          margin-top: 40px;
+          margin-top: 10px;
         }
         .realisation{
           width: 80%;
@@ -641,13 +641,8 @@
           text-align: center;
         }
         .texte-graphisme{
-          text-align: justify;
-          display: flex;
-          justify-content: flex-end;
-          flex-direction: column;
-          align-items: center;
-          align-content: center;
           margin-top: 20px;
+          margin-left: 45vw;
         }
         .nos_prestation_graphisme{
           margin-top: 5%;
@@ -656,14 +651,14 @@
         .flechegraphisme{
           height: 80px;
           width: 80px;
-          margin-right: 40px;
-          margin-top: 20px;
-
         }
-        .nos-realisation{
+        #nos-realisation{
+          display: flex;
+          flex-direction: column;
           text-align: center;
-          color: black;
-          margin-top: 40px;
+          justify-content: flex-end;
+          align-items: center;
+          height: 80%;
         }
         .realisation{
           width: 80%;
@@ -692,21 +687,10 @@
             background-size: 100% auto;
             text-align: center;
           }
-          .texte-graphisme{
-            text-align: justify;
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            margin-top: 20px;
-            margin-left: 70px;
-          }
+
           .flechegraphisme{
             height: 80px;
             width: 80px;
-            margin-right: 120px;
-            margin-top: 20px;
           }
           .realisation{
             width: 80%;
@@ -727,21 +711,10 @@
         }
 
         @media screen and (max-width: 425px){
-          .texte-graphisme{
-            text-align: justify;
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
-            margin-top: 20px;
-            margin-left: 10px;
+          .texte-graphisme {
+            margin-left: 35%;
           }
-          .flechegraphisme{
-            height: 80px;
-            width: 80px;
-            margin-right: 70px;
-            margin-top: 20px;
+
           }
         }
         @media screen and (max-width: 375px){
