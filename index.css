@@ -197,11 +197,9 @@
      align-items: center;
      height: 600px;
      width: auto;
-     background-color: ;
      border: solid;
      border-color: rgb(0, 164, 145);
-     margin-left: 6%;
-     margin-right: 5%;
+     margin : 6%;
      padding-left: 7%;
      padding-right: 10px;
      box-shadow: 10px 5px 5px rgb(192,192,192);
@@ -258,7 +256,8 @@
      #nom{
        color: rgb(0, 165, 146);
      }
-     #btn-envoi{margin-top: 10px;
+     #btn-envoi{
+       margin-bottom: 10px;
        margin-left: 10px;
            --bs-btn-bg: rgb(0,165, 146);
            --bs-btn-border-color: rgb(0,165, 146);
@@ -443,8 +442,7 @@
        display: flex;
        align-items: center;
        height: 450px;
-       width: 650px;
-       background-color: ;
+       width: auto;
        border: solid;
        border-color: rgb(0, 164, 145);
        margin-right: 5%;
