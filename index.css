@@ -1,0 +1,923 @@
+    @font-face{
+      font-family: 'TSTAR';
+      src: url('Assets/TYPO/TSTAR-Regular.otf') format('opentype')
+    }
+
+       body {
+        font-family: 'TSTAR', sans-serif;
+        font-size: 120%;
+      }
+
+      h1 {
+        font-size: 5vw;
+      }
+
+      h2 {
+        font-size: 3vw;
+      }
+
+      h3 {
+        font-size: 1.3vw;
+        margin-bottom: 1em;
+      }
+
+      h4{
+        font-weight: 500;
+        margin-bottom: 1em;
+      }
+      p {
+        font-size: 0.85vw;
+        margin-bottom: 1em;
+      }
+
+      .responsive {
+        max-width: 100%;
+        height : auto;
+      }
+
+      #header {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url('IMG/IMG_HEADER.jpg');
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+        text-align: center;
+      }
+
+      #top-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-right: 10px;
+      }
+
+      #logopixncom{
+        flex-basis: 50%;
+      }
+
+      #logors {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: flex-end;
+        gap: 20px;
+        margin-top: 10px;
+      }
+
+      .rs {
+        width: 50px;
+        height: 50px;
+      }
+
+      #logo{
+        display: block;
+        width: 40%;
+        padding: 5%;
+      }
+
+      #text-header{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        margin : auto;
+        justify-content: center;
+      }
+
+      #services {
+        padding-top: 3%;
+      }
+
+     .flex-container {
+     display: grid;
+     grid-gap: 18%;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(1, 300px);
+     height: 40vh;
+     padding: 2% 15%;
+     }
+
+     .panneau-service {
+       display: flex;
+       flex-direction: column;
+       height: 30vh;
+       text-decoration: none;
+       border-color: rgb(200,230,232);
+       border-style: solid;
+       border-width: 3px;
+     }
+
+     .panneau-service:hover {
+       color: white;
+       border-style: none;
+     }
+
+     .panneau-service a {
+       color: inherit;
+       text-decoration: none;
+     }
+
+     #panneau-web:hover{
+       background: rgb(0, 165, 146);
+     }
+
+     #panneau-graphique:hover{
+       background: rgb(245, 176, 0);
+     }
+
+     #panneau-community:hover{
+       background: rgb(252, 236, 180);
+     }
+
+     a {
+        color: inherit;
+        text-decoration: none;
+     }
+
+     nav {
+       position: fixed;
+       width: 50%;
+       display : flex;
+       justify-content: right;
+       margin-left: auto;
+       right: 0px;
+       top: 9%;
+       font-size: 1.5vw;
+     }
+
+     nav ul {
+       list-style-type: none;
+       position: fixed;
+     }
+
+     nav ul li {
+       float: left;
+       margin : 10px;
+       text-align: center;
+       position: relative;
+     }
+
+     nav ul::after {
+       content: "";
+       display: table;
+       clear: both;
+     }
+
+     nav a {
+       display: block;
+     }
+
+     nav a:hover {
+       color: inherit;
+     }
+     li a {
+       text-decoration:none;
+       text-align: center;
+     }
+     li a:after {
+       content: '';
+       display: block;
+       margin: auto;
+       height: 2px;
+       width: 0;
+       background: transparent;
+       transition: width .3s ease, background-color .5s ease;
+     }
+     li a:hover:after {
+       width: 100%;
+       background: #444;
+     }
+     .sousmenu {
+       display: none;
+     }
+
+     .sousmenu li {
+       float: none;
+       width: 200px;
+       text-align: left;
+     }
+
+     nav > ul li:hover .sousmenu {
+       display: block;
+       right: 40px;
+     }
+
+     .sousmenu a:hover {
+       color: rgb(0, 165, 146);
+     }
+     .sousmenu a:hover::after{
+       width: 0%;
+     }
+
+     .sousmenu {
+       display: none;
+       font-size: 0.9vw;
+       position: absolute;
+       width: 100%;
+       z-index: 1000;
+     }
+
+     #fleche{
+      width: 100%;
+      height: auto;
+      padding: 5vh 0;;
+     }
+
+     #flecheSeule{
+      width: 50px;
+      height: 50px;
+      margin-right: 5px;
+     }
+
+     .contact{
+       text-align: center;
+
+     }
+     #div-contact {
+     display: flex;
+     align-items: center;
+     height: 600px;
+     width: auto;
+     border: solid;
+     border-color: rgb(0, 164, 145);
+     margin : 6%;
+     padding-left: 7%;
+     padding-right: 10px;
+     box-shadow: 10px 5px 5px rgb(192,192,192);
+
+     }
+     .maps{margin-left: -112px}
+
+      .desQuestion{
+      text-align: center;
+      }
+     .contact-texte{
+       margin-left: -160px;
+       width: auto;
+       text-align: center;
+     }
+     .pointer{
+       margin-right: 10px;
+     }
+    .icon-tel{
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      text-align: left;
+    }
+    .icon-mail{
+      width: 24px;
+      height: 24px;
+      margin-right: 9px;
+      text-align: left;
+    }
+     .horraire-semaine{
+       text-align: center;
+     }
+     .horaires{
+       color: rgb(245, 176, 0);
+       text-align: center;
+     }
+     .placeholder{
+       color: rgb(0, 165, 146);
+     }
+     #formulaire-contact{
+       min-width: 500px;
+       /*height: 200px;*/
+       margin-left: -50px;
+       padding-right: 50px;
+       align-items: right;
+
+     }
+     .form-control{margin: 10px;
+        border: 1px solid rgb(0, 165, 146);
+        margin-block-start: auto;
+        align-items: right;
+     }
+     #nom{
+       color: rgb(0, 165, 146);
+     }
+     #btn-envoi{
+       margin-bottom: 10px;
+       margin-left: 10px;
+           --bs-btn-bg: rgb(0,165, 146);
+           --bs-btn-border-color: rgb(0,165, 146);
+     }
+     #div-footer {
+     display: flex;
+     align-items: center;
+     height: auto;
+     background-color: ;
+     margin-left: 50px;
+     }
+
+    #logo-footer{
+    width: 150px;
+    height: 100px;
+    }
+
+    #contact-footer{
+    }
+     .titres {
+       text-align: center;
+       color: rgb(0, 165, 146);
+     }
+
+     .bouton-contact{
+       float: none;
+       display: flex;
+       align-items: end;
+       justify-content: center;
+       border: 2px;
+       height: 30%;
+       margin-bottom: 2%;
+     }
+
+     a.button {
+       height: auto;
+       width: 18vw;
+       color : black;
+       padding : 10px 40px;
+       padding-top: 1.1vh;
+       background: white;
+       border-style: ridge;
+       border-width: 1px;
+       border-color: black;
+       border-radius: 50px;
+     }
+
+     a.button:hover{
+       color : rgb(245, 176, 0);
+       border-color: rgb(245, 176, 0);
+     }
+
+     img {
+       max-width: 100%;
+       height: auto;
+     }
+
+     .title-pannel{
+       display: flex;
+       height: 40%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       padding-bottom: 10%;
+     }
+
+     .text-pannel{
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       height: 10%;
+       padding: 0 25%;
+     }
+
+     .logo-pannel{
+       display: flex;
+       height: 50%;
+       justify-content: center;
+       align-items: end;
+       padding-bottom: 15px;
+     }
+
+     #fleche-pannel{
+        width: 2.5vw;
+        height: auto;
+     }
+
+     #flex-mission{
+       display: flex;
+       flex-direction: row;
+       height: auto;
+       padding: 2% 20%;
+       gap: 10%;
+     }
+
+     .img-ampoule{
+       width: 50%;
+       height: auto;
+       flex: 1 1 0px;
+     }
+
+     .texte-mission{
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       flex: 1 1 0px;
+     }
+             #scrollUp
+        {
+        position: fixed;
+        bottom : 10px;
+        right: 20px;
+        opacity: 0.5;
+        width: 150px;
+        height: 150px;
+        }
+     @media screen and (max-width: 1080px){
+       a.button{
+         font-size: 0.9vh;
+       }
+
+     }
+     @media screen and (max-width: 800px){
+
+       #header{
+         height: auto;
+         background-size: auto;
+       }
+
+       #header-community{
+         height: auto;
+         background-size: auto;
+       }
+
+       #header-graphique{
+         height: auto;
+         background-size: auto;
+       }
+
+       #header-developpement{
+         height: auto;
+         background-size: auto;
+       }
+
+       #logo{
+         width: 30%;
+         padding: 5%;
+       }
+
+       #logors{
+         gap: 10px;
+       }
+
+       .rs{
+         width: 30px;
+         height: 30px;
+       }
+
+       a.button {
+         height: 2vh;
+         width: 25vw;
+         margin-bottom: 0;
+         padding : 0 0;
+         font-size: 0.9vh;
+         text-align: center;
+         padding-top: 0.3vh;
+       }
+
+       nav {
+         width: 70%;
+         top: 4%;
+         display : flex;
+         justify-content: right;
+         margin-left: auto;
+       }
+
+       .flex-container {
+         height: 25vh;
+         grid-gap: 5%;
+         padding: 0 5%;
+         margin-top: 2%;
+       }
+
+       .panneau-service {
+         height: 20vh;
+       }
+
+       .text-pannel {
+         padding-top: 10%;
+       }
+
+       h3 {
+         font-size: 1vh;
+       }
+
+       h4 {
+         font-size: 0.9vh;
+       }
+
+       p {
+         font-size: 0.85vh;
+       }
+
+       #flex-mission{
+         padding: 2% 5%;
+         gap: 5%;
+       }
+
+       .img-ampoule{
+         width: 100%;
+         height: auto;
+         margin: auto;
+       }
+
+       .texte-mission{
+         justify-content: center;
+         align-items: center;
+         margin: auto;
+       }
+       .maps{
+         display: none;
+       }
+
+       #div-contact {
+       display: flex;
+       align-items: center;
+       height: 450px;
+       width: auto;
+       border: solid;
+       border-color: rgb(0, 164, 145);
+       margin-right: 5%;
+       padding-left: 5%;
+       padding-right: 10px;
+       box-shadow: 10px 5px 5px rgb(192,192,192);
+       flex-direction: column-reverse;
+       flex-wrap: wrap;
+       }
+
+       .contact-texte{
+         margin-left: -150px;
+         width: 300px;
+         text-align: center;
+         margin-bottom: 100px;
+         margin-left: -30px;
+       }
+
+       #formulaire-contact{
+         min-width: 300px;
+         height: auto;
+         padding-right: 0px;
+         align-items: right;
+
+       }
+       #div-footer {
+       display: flex;
+       align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
+       width: 90%;
+       height: auto;
+       background-color: ;
+       margin-left: 50px;
+       }
+       #logo-footer{
+      width: 100px;
+      height: 70px;
+      }
+
+      #contact-footer{
+      }
+       .titres {
+         text-align: center;
+         color: rgb(0, 165, 146);
+       }
+     }@media screen and (max-width: 425px){
+       #logo{
+         width: 35%;
+       }
+       #logors{
+         gap: 5px;
+       }
+
+       .rs{
+         width: 20px;
+         height: 20px;
+       }
+
+       #div-contact {
+       display: flex;
+       align-items: center;
+       height: 600px;
+       width: 350px;
+       background-color: ;
+       border: solid;
+       border-color: rgb(0, 164, 145);
+       margin-right: 5%;
+       padding-left: 5%;
+       padding-right: 10px;
+       box-shadow: 10px 5px 5px rgb(192,192,192);
+       flex-direction: column;
+
+       }
+
+       .contact-texte{
+         margin-left: -150px;
+         width: 300px;
+         text-align: center;
+         margin-bottom: 0px;
+         margin-left: -20px;
+         margin-top: 10px;
+       }
+
+       #formulaire-contact{
+         min-width: 300px;
+         height: auto;
+         padding-right: 0px;
+         align-items: right;
+         margin-left: -340px;
+         margin-top: 200px;
+
+       }
+       .horraire-semaine{
+         text-align: center;
+         margin-left: 20px;
+       }
+       .horaires{
+         color: rgb(245, 176, 0);
+         text-align: center;
+        margin-left: 20px;
+       }
+     }
+     @media screen and (max-width: 375px){
+
+     }
+
+
+
+
+
+        /*css pour page community manager*/
+
+        #header-community {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          background-image: url('IMG/IMG_headerP4.jpg');
+          background-repeat: no-repeat;
+          background-size: 100vw 100vh;
+          text-align: center;
+        }
+        .texte-community{
+          margin-top: 20px;
+          margin-left: 45%;
+        }
+        .nos_prestation_community{
+          margin-top: 5%;
+        }
+
+        .flecheCom{
+          height: 80px;
+          width: 80px;
+
+        }
+        #nos-realisation{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: flex-end;
+        align-items: center;
+        height: 80%;
+        }
+
+        .realisation{
+          width: 80%;
+          height: 40%;
+          background-color: #fff;
+          display: flex;
+        }
+        .bouton-contact-bas{
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          border: 2px;
+          border-color: rgb(0, 165, 146);
+          height: 30%;
+          padding-bottom: 5%;
+          color: rgb(0, 165, 146);
+        }
+
+        @media screen and (max-width: 800px){
+
+          .realisation{
+            height: 20%;
+          }
+
+          .bouton-contact-bas{
+            height: 15%;
+          }
+        }
+
+        @media screen and (max-width: 425px){
+          .texte-community {
+            margin-left: 35%;
+          }
+        }
+
+        @media screen and (max-width: 375px){
+
+        }
+
+        /*css pour page creation graphique/*/
+
+        #header-graphique {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          background-image: url('IMG/IMG_headerP3.jpg');
+          background-repeat: no-repeat;
+          background-size: 100vw 100vh;
+          text-align: center;
+        }
+        .texte-graphisme{
+          margin-top: 20px;
+          margin-left: 45%;
+        }
+        .nos_prestation_graphisme{
+          margin-top: 5%;
+        }
+
+        .flechegraphisme{
+          height: 80px;
+          width: 80px;
+        }
+        #nos-realisation{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: flex-end;
+          align-items: center;
+          height: 80%;
+        }
+        .realisation{
+          width: 80%;
+          height: 40%;
+          background-color: #fff;
+          display: flex;
+        }
+        .bouton-contact-bas{
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          border: 2px;
+          border-color: rgb(0, 165, 146);
+          height: 30%;
+          padding-bottom: 5%;
+          color: rgb(0, 165, 146);
+        }
+
+        @media screen and (max-width: 800px){
+
+          .flechegraphisme{
+            height: 80px;
+            width: 80px;
+          }
+          .realisation{
+            width: 80%;
+            height: 20%;
+            background-color: #fff;
+            display: flex;
+          }
+          .bouton-contact-bas{
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            border: 2px;
+            border-color: rgb(0, 165, 146);
+            height: 15%;
+            padding-bottom: 5%;
+            color: rgb(0, 165, 146);
+          }
+        }
+
+        @media screen and (max-width: 425px){
+          .texte-graphisme {
+            margin-left: 35%;
+          }
+
+          }
+        }
+        @media screen and (max-width: 375px){
+
+        }
+
+        /*css pour page creation developpement/*/
+
+        #header-developpement {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          background-image: url('IMG/IMG_headerP2.jpg');
+          background-repeat: no-repeat;
+          background-size: 100vw 100vh;
+          text-align: center;
+        }
+        .texte-developpement{
+          margin-top: 20px;
+          margin-left: 45vw;
+        }
+        .nos_prestation_developpement{
+          margin-top: 5%;
+        }
+
+        .flecheDeveloppement{
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          height: 80px;
+          width: 80px;
+          margin auto;
+        }
+        #nos-realisation{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: flex-end;
+          align-items: center;
+          height: 80%;
+        }
+
+        .titre-realisation {
+          text-align: center;
+        }
+        .realisation{
+          min-width: 80%;
+          min-height: 40%;
+          background-color: #fff;
+          display: flex;
+        }
+        .bouton-contact-bas{
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          border: 2px;
+          border-color: rgb(0, 165, 146);
+          height: 15%;
+          padding-bottom: 0;
+          color: rgb(0, 165, 146);
+        }
+
+        .bouton-contact-header{
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          border: 2px;
+          border-color: rgb(0, 165, 146);
+          height: 15%;
+          padding-bottom: 3%;
+          color: rgb(0, 165, 146);
+        }
+
+        @media screen and (max-width: 800px){
+
+          .texte-developpement{
+            text-align: justify;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-start;
+            align-content: flex-start;
+            margin-top: 20px;
+            margin-left: 40vw;
+          }
+          .flecheDeveloppement{
+            height: 80px;
+            width: 80px;
+          }
+          .realisation{
+            width: 80%;
+            height: 20%;
+            background-color: #fff;
+            display: flex;
+          }
+
+          #nos-realisation {
+            height: 40%;
+          }
+
+          .bouton-contact-bas{
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            border: 2px;
+            border-color: rgb(0, 165, 146);
+            height: 15%;
+            color: rgb(0, 165, 146);
+          }
+        }
+
+        @media screen and (max-width: 425px){
+          .texte-developpement{
+            text-align: justify;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            margin-top: 20px;
+            margin-left: 30px;
+          }
+          .flecheDeveloppement{
+            height: 80px;
+            width: 80px;
+            margin-right: 90px;
+            margin-top: 20px;
+          }
+        }
+        @media screen and (max-width: 375px){
+
+        }
+
+        /* page de contact */
+        .titre-contact{
+          margin-top: 10px;
+        }

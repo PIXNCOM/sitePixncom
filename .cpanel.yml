@@ -1,0 +1,13 @@
+---
+  deployment:
+    tasks:
+      - export DEPLOYPATH=/home/user/index.html/
+      - /bin/cp index.html $DEPLOYPATH
+      - /bin/cp community-manager.html $DEPLOYPATH
+      - /bin/cp developpement-web.html $DEPLOYPATH
+      - /bin/cp creation-graphique.html $DEPLOYPATH
+      - /bin/cp contact.html $DEPLOYPATH
+      - /bin/cp index.css $DEPLOYPATH
+      - /bin/cp script.js $DEPLOYPATH
+      - /bin/cp -R Assets $DEPLOYPATH
+      - /bin/cp -R IMG $DEPLOYPATH
