@@ -409,11 +409,11 @@
              #scrollUp
         {
         position: fixed;
-        bottom : 10px;
+        bottom : 10%;
         right: 20px;
         opacity: 0.5;
-        width: 150px;
-        height: 150px;
+        width: 70px;
+        height: 70px;
         }
      @media screen and (max-width: 1080px){
        a.button{
