@@ -227,8 +227,8 @@
      #div-contact {
      display: flex;
      align-items: center;
-     height: 600px;
-     width: auto;
+     height: 40%;
+     width: 90%;
      border: solid;
      border-color: rgb(0, 164, 145);
      margin : 6%;
@@ -237,13 +237,16 @@
      box-shadow: 10px 5px 5px rgb(192,192,192);
 
      }
-     .maps{margin-left: -112px}
+     .maps{
+         margin-left: -7%;
+         margin-right: 8%;
+     }
 
       .desQuestion{
       text-align: center;
       }
      .contact-texte{
-       margin-left: -160px;
+       margin-left: -21%;
        width: auto;
        text-align: center;
      }
@@ -273,10 +276,9 @@
        color: rgb(0, 165, 146);
      }
      #formulaire-contact{
-       min-width: 500px;
-       /*height: 200px;*/
-       margin-left: -50px;
-       padding-right: 50px;
+         width: 40%;
+       margin-left: -10%;
+       padding-right: 2%;
        align-items: right;
 
      }
