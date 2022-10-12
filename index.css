@@ -150,6 +150,8 @@
      nav ul li {
        float: left;
        margin : 10px;
+       text-align: center;
+       position: relative;
      }
 
      nav ul::after {
@@ -167,6 +169,7 @@
      }
      li a {
        text-decoration:none;
+       text-align: center;
      }
      li a:after {
        content: '';
@@ -181,15 +184,19 @@
        width: 100%;
        background: #444;
      }
+     .sousmenu {
+       display: none;
+     }
 
      .sousmenu li {
        float: none;
-       width: auto;
-       margin: 3px 0;
+       width: 200px;
+       text-align: left;
      }
 
      nav > ul li:hover .sousmenu {
        display: block;
+       right: 40px;
      }
 
      .sousmenu a:hover {
@@ -203,9 +210,8 @@
        display: none;
        font-size: 0.9vw;
        position: absolute;
-       text-align: left;
-       padding-left: 0;
-       margin: 0;
+       width: 100%;
+       z-index: 1000;
      }
 
      #fleche{
@@ -227,7 +233,11 @@
      #div-contact {
      display: flex;
      align-items: center;
+<<<<<<< HEAD
      height: 40%;
+=======
+     height: 50%;
+>>>>>>> ab957b931ec0270f4f67e8f16f60eee76af23f72
      width: 90%;
      border: solid;
      border-color: rgb(0, 164, 145);
