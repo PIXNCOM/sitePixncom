@@ -244,7 +244,7 @@
      }
 
       .desQuestion{
-      text-align: center;
+     /* text-align: center;*/
       }
      .contact-texte{
        margin-left: -21%;
@@ -281,7 +281,10 @@
        margin-left: -10%;
        padding-right: 2%;
        align-items: right;
-
+     }
+     #rgpd{
+         margin-left: 3%;
+         margin-bottom: 3%;
      }
      .form-control{margin: 10px;
         border: 1px solid rgb(0, 165, 146);
@@ -301,7 +304,7 @@
      display: flex;
      align-items: center;
      height: auto;
-     background-color: ;
+     /*background-color:;*/
      margin-left: 50px;
      }
 
@@ -770,7 +773,7 @@
           }
 
           }
-        }
+
         @media screen and (max-width: 375px){
 
         }
@@ -797,7 +800,7 @@
           text-align: center;
           height: 80px;
           width: 80px;
-          margin auto;
+          margin: auto;
         }
         #nos-realisation{
           display: flex;

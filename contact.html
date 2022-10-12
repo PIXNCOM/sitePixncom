@@ -61,15 +61,24 @@
               <div id="formulaire-contact">
                 <div class="formulaire">
                   <p class="desQuestion"> <img id="flecheSeule" src="Assets/FLECHE-SEULE.png">Des question, un projet ?<br> prenons un café et parlons-en.
-                    <form action="contact.php"method="post">
+                    <form method="post">
                   <input type="text" name="Nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
                   <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
-                  <input type="email" name="email" class="form-control" id="mail" placeholder="Mail *">
+                  <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
 
                   <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
+                    <input type="checkbox" id="rgpd" name="rgpd" required checked>
+                    <label for="rgpd">J'accepte les conditions rgpd<a>#</a> </label>
                 <p class="desQuestion"> * champ obligatoire</p>
                   <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
                   </form>
+                 <!--   <?php
+                  if (isset($_POST['message'])) {
+                      $retour = mail('quentindevaulx63@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: quentindevaulx63@gmail.com' . "\r\n" . 'Reply-to: ' . $_POST['email']);
+                      if($retour)
+                          echo '<p>Votre message a bien été envoyé.</p>';
+                    }
+                    ?>-->
                   </div>
               </div>
             </div>
