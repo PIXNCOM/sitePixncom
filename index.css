@@ -150,6 +150,8 @@
      nav ul li {
        float: left;
        margin : 10px;
+       text-align: center;
+       position: relative;
      }
 
      nav ul::after {
@@ -167,6 +169,7 @@
      }
      li a {
        text-decoration:none;
+       text-align: center;
      }
      li a:after {
        content: '';
@@ -181,15 +184,19 @@
        width: 100%;
        background: #444;
      }
+     .sousmenu {
+       display: none;
+     }
 
      .sousmenu li {
        float: none;
-       width: auto;
-       margin: 3px 0;
+       width: 200px;
+       text-align: left;
      }
 
      nav > ul li:hover .sousmenu {
        display: block;
+       right: 40px;
      }
 
      .sousmenu a:hover {
@@ -203,9 +210,8 @@
        display: none;
        font-size: 0.9vw;
        position: absolute;
-       text-align: left;
-       padding-left: 0;
-       margin: 0;
+       width: 100%;
+       z-index: 1000;
      }
 
      #fleche{
@@ -227,8 +233,8 @@
      #div-contact {
      display: flex;
      align-items: center;
-     height: 600px;
-     width: auto;
+     height: 40%;
+     width: 90%;
      border: solid;
      border-color: rgb(0, 164, 145);
      margin : 6%;
@@ -237,13 +243,16 @@
      box-shadow: 10px 5px 5px rgb(192,192,192);
 
      }
-     .maps{margin-left: -112px}
+     .maps{
+         margin-left: -7%;
+         margin-right: 8%;
+     }
 
       .desQuestion{
       text-align: center;
       }
      .contact-texte{
-       margin-left: -160px;
+       margin-left: -21%;
        width: auto;
        text-align: center;
      }
@@ -273,10 +282,9 @@
        color: rgb(0, 165, 146);
      }
      #formulaire-contact{
-       min-width: 500px;
-       /*height: 200px;*/
-       margin-left: -50px;
-       padding-right: 50px;
+         width: 40%;
+       margin-left: -10%;
+       padding-right: 2%;
        align-items: right;
 
      }
