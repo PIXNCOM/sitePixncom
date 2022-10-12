@@ -85,7 +85,7 @@
       #text-header{
         display: flex;
         flex-direction: column;
-        height: 50%;
+        height: 100%;
         margin : auto;
         padding-top: 3%;
         justify-content: center;
@@ -102,7 +102,7 @@
      .panneau-service {
        display: flex;
        flex-direction: column;
-       height: 30vh;
+       height: 33vh;
        text-decoration: none;
        border-color: rgb(200,230,232);
        border-style: solid;
@@ -357,12 +357,11 @@
 
      .title-pannel{
        display: flex;
-       height: 40%;
+       height: 50%;
        text-align: center;
        justify-content: center;
-       align-items: center;
        padding-bottom: 10%;
-       margin-top: 10px;
+       margin-top: 20px;
      }
 
      .text-pannel{
@@ -918,17 +917,17 @@
           }
 
           h3 {
-            font-size: 2.5vw;
+            font-size: 3vw;
+            font-weight: 600;
             margin-bottom: 1em;
           }
 
           h4{
-            font-size: 2vw;
-            font-weight: 500;
+            font-size: 2.5vw;
             margin-bottom: 1em;
           }
           p {
-            font-size: 1.8vw;
+            font-size: 2vw;
             margin-bottom: 1em;
           }
 
@@ -941,22 +940,25 @@
           }
 
           #header {
-            height: 40vh;
+            height: 30vh;
             background-size: 100vw auto;
+          }
+
+          #text-header {
           }
 
           #header-developpement {
-            height: 40vh;
-            background-size: 100vw auto;
+            height: 30vh;
+            background-size: 100vw 30vh;
           }
 
           #header-graphique {
-            height: 40vh;
+            height: 30vh;
             background-size: 100vw auto;
           }
 
           #header-community {
-            height: 40vh;
+            height: 30vh;
             background-size: 100vw auto;
           }
 
@@ -969,7 +971,7 @@
           }
 
           #nos-realisation {
-            height: 80vh;
+            height: 60vh;
           }
 
           a.button {
@@ -985,6 +987,7 @@
 
           .panneau-service {
             height: 30vh;
+            justify-content: space-between;
           }
 
           #flex-mission {
