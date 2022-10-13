@@ -64,10 +64,14 @@
             <form action="index.php"method="post">
               <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
               <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
-              <input type="email" name="email" class="form-control" id="mail" placeholder="Mail *">
+              <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
 
               <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
               <p class="desQuestion"> * champ obligatoire</p>
+            <div>
+                <input type="checkbox" id="rgdp" name="rgpd" required >
+                <label for="rgpg">j'accepte les conditions rgpd  <a href="#" class="lienRGPD">lire les conditions rgpd </label>
+            </div>
               <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
             </form>
           </div>

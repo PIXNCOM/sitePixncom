@@ -126,11 +126,15 @@
                 <form action="index.php"method="post">
                   <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
                   <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
-                  <input type="email" name="email" class="form-control" id="mail" placeholder="Mail *">
+                  <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
 
                   <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
                   <p class="desQuestion"> * champ obligatoire</p>
-                  <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
+                    <div>
+                        <input type="checkbox" id="rgdp" name="rgpd" required >
+                        <label for="rgpd">j'accepte les conditions rgpd  <a href="#">lire les conditions rgpd </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
                 </form>
                 <div id="popup1" class="overlay">
                 	<div class="popup">
@@ -141,8 +145,6 @@
                 	</div>
                 </div>
                 <?php
-                header("Location: index.php#popup1");
-
                 use PHPMailer\PHPMailer\PHPMailer;
 
                 //Pour utiliser notre objet PHPMailer
@@ -204,9 +206,23 @@
 
 
                       if ($mail->send()) {
-                        echo '<script>alert("Mail envoyé ! Merci pour votre interêt.")</script>';
+                        echo '<div id="popup1" class="overlay">
+                        	<div class="popup">
+                        		<a class="close" href="index.php">&times;</a>
+                        		<div class="content">
+                        			<center>Merci de nous avoir contacté !</center>
+                        		</div>
+                        	</div>
+                        </div>';
                       } else {
-                        $erreur = '<div>Echec dans l\'envoi du mail</div>';
+                        $erreur = '<div id="popup1" class="overlay">
+                        	<div class="popup">
+                        		<a class="close" href="index.php">&times;</a>
+                        		<div class="content">
+                        			<center>Un problème est survenu !</center>
+                        		</div>
+                        	</div>
+                        </div>';
                       }
                     } catch (Exception $e) {
                       $erreur = $e;
