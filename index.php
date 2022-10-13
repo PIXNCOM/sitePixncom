@@ -24,7 +24,7 @@
             </div>
             <nav>
               <ul id="flex-menus">
-                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="index.php">ACCUEIL</a></li>
                 <li class="menu-deroulant ">SERVICES
                   <ul class="sousmenu">
                     <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
@@ -123,15 +123,88 @@
           </div>
         <div id="formulaire-contact">
           <div class="formulaire">
-            <p class="desQuestion"> <img id="flecheSeule" src="Assets/FLECHE-SEULE.png">Des question, un projet ?<br> prenons un café et parlons-en.
-            <input type="text" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
-            <input type="text" required class="form-control" id="telephone" placeholder="Téléphone *">
-            <input type="email" required class="form-control" id="mail" placeholder="Mail *">
-          </div>
-            <textarea class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
-            <input type="checkbox" id="rgpd" name="rgpd" required checked>
-            <label for="rgpd">J'accepte les conditions rgpd<a>#</a> </label>
-            <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
+              <form action="index.php"method="post">
+                  <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
+                  <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
+                  <input type="email" name="email" class="form-control" id="mail" placeholder="Mail *">
+
+                  <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
+                  <p class="desQuestion"> * champ obligatoire</p>
+                  <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
+              </form>
+              <?php
+
+              use PHPMailer\PHPMailer\PHPMailer;
+
+              //Pour utiliser notre objet PHPMailer
+              use PHPMailer\PHPMailer\Exception;
+
+              // Pour utiliser l'objet Exeption
+
+              //require 'vendor/autoload.php'; //L'autoload permet d'eviter de mettre des require partout
+              require 'PHPMailer/src/Exception.php';
+              require 'PHPMailer/src/PHPMailer.php';
+              require 'PHPMailer/src/SMTP.php';
+
+              if(!empty($_POST) && $_SERVER['HTTP_HOST'] == 'localhost'){
+
+
+                  $email = htmlspecialchars($_POST['email']);
+                  $nom = htmlspecialchars($_POST['nom']);
+                  $telephone = htmlspecialchars($_POST['telephone']);
+                  $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+
+                  $erreur = NULL;
+                  if (!isset($erreur)) {
+
+                      $mail = new PHPMailer(true);
+
+                      try {
+
+                          $mail->isSMTP(); //Pour preciser que c'est du SMTP
+                          $mail->Host = 'smtp.gmail.com';  // Le serveur smtp de google
+                          $mail->SMTPAuth = true;                               // On active l'authentification
+                          $mail->Username = 'maxime.cougourdan@gmail.com';                 // SMTP username
+                          $mail->Password = 'exehzdnkawgmlaio';                           // Le mot de passe que vous avez récupéré
+                          $mail->SMTPSecure = 'tls';                            // Parameter de sécurité mis sur TLS
+                          $mail->Port = 587;                                    // Le port donne par google pour son SMTP
+
+                          $mail->setFrom($email, $nom); // De qui est l' email
+                          $mail->addReplyTo($email, $nom); // Option pour avoir le reply
+                          $mail->addAddress('contact@pixncom.com'); //La boite mail où vous voulez recevoir les mails
+
+                          $Body = "Nom: " . $nom . "\n";
+
+                          $Body .= "Email: ";
+                          $Body .= $email;
+                          $Body .= "\r\n";
+
+                          $Body .= "\n Telephone: ";
+                          $Body .= $telephone;
+                          $Body .= "\r\n";
+
+                          $Body .= "Message: ";
+                          $Body .= $message;
+                          $Body .= "\r\n";
+
+                          $mail->isHTML(true); //Met le mail au format HTML
+                          $mail->Subject = "formulaire pixncom"; // On parametre l'objet
+                          $mail->Body = nl2br($Body); // Le message pour les boites html
+                          $mail->AltBody = $Body; //Le message pour les boites non html
+                          $mail->SMTPDebug = 0; //On désactive les logs de debug
+
+
+                          if ($mail->send()) {
+                              echo '<script>alert("Mail envoyé ! Merci pour votre interêt.")</script>';
+                          } else {
+                              $erreur = '<div>Echec dans l\'envoi du mail</div>';
+                          }
+                      } catch (Exception $e) {
+                          $erreur = $e;
+                      }
+                  }
+              }
+              ?>
         </div>
       </div>
       <script src="app.js"></script>
