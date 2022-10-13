@@ -143,6 +143,7 @@ nav {
   right: 0px;
   top: 9%;
   font-size: 1.5vw;
+  font-weight: bold;
 }
 
 nav ul {
@@ -1002,7 +1003,7 @@ img {
     }
 
     #div-contact {
-      height: 550px;
+      height: 580px;
       width: auto;
       margin: 3%;
       justify-content: space-around;
@@ -1024,32 +1025,7 @@ img {
       padding-right: 0px;
     }
   }
-
-  .box {
-    width: 40%;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.2);
-    padding: 35px;
-    border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
-  }
-
-  .button {
-    font-size: 1em;
-    padding: 10px;
-    color: #fff;
-    border: 2px solid #06D85F;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
-  .button:hover {
-    background: #06D85F;
-  }
-
+  
   .overlay {
     position: fixed;
     top: 0;

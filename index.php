@@ -32,7 +32,7 @@
                 <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
               </ul>
             </li>
-            <li><a href="#nous-choisir">NOUS CHOISIR</a></li>
+            <li><a href="#nous-choisir">VOTRE PROJET</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
@@ -123,6 +123,7 @@
             </div>
             <div id="formulaire-contact">
               <div class="formulaire">
+                <p class="desQuestion"> <img id="flecheSeule" src="Assets/FLECHE-SEULE.png">Des question, un projet ?<br> prenons un café et parlons-en.</p>
                 <form action="index.php"method="post">
                   <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
                   <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
@@ -132,7 +133,7 @@
                   <p class="desQuestion"> * champ obligatoire</p>
                     <div>
                         <input type="checkbox" id="rgdp" name="rgpd" required >
-                        <label for="rgpd">j'accepte les conditions rgpd  <a href="#">lire les conditions rgpd </a></label>
+                        <label for="rgpd">j'accepte les conditions rgpd  <a class="lienRGPD" href="#">lire les conditions rgpd </a></label>
                     </div>
                     <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
                 </form>
@@ -175,8 +176,8 @@
                       $mail->isSMTP(); //Pour preciser que c'est du SMTP
                       $mail->Host = 'smtp.gmail.com';  // Le serveur smtp de google
                       $mail->SMTPAuth = true;                               // On active l'authentification
-                      $mail->Username = 'maxime.cougourdan@gmail.com';                 // SMTP username
-                      $mail->Password = 'exehzdnkawgmlaio';                           // Le mot de passe que vous avez récupéré
+                      $mail->Username = 'pixncom@gmail.com';                 // SMTP username
+                      $mail->Password = 'rngrwsjxomdvlubt';                           // Le mot de passe que vous avez récupéré
                       $mail->SMTPSecure = 'tls';                            // Parameter de sécurité mis sur TLS
                       $mail->Port = 587;                                    // Le port donne par google pour son SMTP
 
