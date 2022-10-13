@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pix'n com</title>
-        <meta charset="utf-8" />
-        <link rel="icon" href="Assets/FLECHE-SEULE.png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body style=background-color:rgb(237,240,242)>
-      <div id="header">
-        <div id="top-header">
-          <div id="logopixncom">
-            <img id="logo" src="Assets/LOGO-RVB.png">
-          </div>
-          <div id="nav-logos">
-            <div id="logors">
-              <a href="https://fr.linkedin.com/">
-                <img class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
-              </a>
-              <a href="https://www.instagram.com/?hl=fr">
-                <img class="rs" src="Assets/iconmonstr-instagram-11-240.png">
-              </a>
-            </div>
-            <nav>
-              <ul id="flex-menus">
-                <li><a href="index.php">ACCUEIL</a></li>
-                <li class="menu-deroulant ">SERVICES
-                  <ul class="sousmenu">
-                    <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
-                    <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
-                    <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
-                  </ul>
-                </li>
-                <li><a href="#nous-choisir">NOUS CHOISIR</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+<head>
+  <title>Pix'n com</title>
+  <meta charset="utf-8" />
+  <link rel="icon" href="Assets/FLECHE-SEULE.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body style=background-color:rgb(237,240,242)>
+  <div id="header">
+    <div id="top-header">
+      <div id="logopixncom">
+        <img id="logo" src="Assets/LOGO-RVB.png">
+      </div>
+      <div id="nav-logos">
+        <div id="logors">
+          <a href="https://fr.linkedin.com/">
+            <img class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
+          </a>
+          <a href="https://www.instagram.com/?hl=fr">
+            <img class="rs" src="Assets/iconmonstr-instagram-11-240.png">
+          </a>
+        </div>
+        <nav>
+          <ul id="flex-menus">
+            <li><a href="index.php">ACCUEIL</a></li>
+            <li class="menu-deroulant ">SERVICES
+              <ul class="sousmenu">
+                <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
+                <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
+                <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
               </ul>
-            </nav>
+            </li>
+            <li><a href="#nous-choisir">NOUS CHOISIR</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="text-header">
+      <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
+      <h3>Développement Web - Création Graphique - Community Management </h3>
+    </div>
+    <div class="bouton-contact">
+      <a href="#contact" class="button"> NOUS CONTACTER </a>
+    </div>
+  </div>
+  <div id="scrollUp">
+    <a href="#top"><img src="Assets/FLECHE-SEULE.png"/>
+      <div style="position:absolute;top:35%;left:12%;">Haut de page</div>
+    </a>
+  </div>
+  <div id="services">
+    <h2 class="titres reveal"> <b> NOS SERVICES</b></h2>
+    <div class="flex-container">
+      <a href="developpement-web.html">
+        <div id="panneau-web" class="panneau-service">
+          <div class="title-pannel">
+            <h3> DÉVELOPPEMENT WEB</h3>
           </div>
-        </div>
-        <div id="text-header">
-           <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
-           <h3>Développement Web - Création Graphique - Community Management </h3>
-        </div>
-        <div class="bouton-contact">
-          <a href="#contact" class="button"> NOUS CONTACTER </a>
-        </div>
-      </div>
-      <div id="scrollUp">
-        <a href="#top"><img src="Assets/FLECHE-SEULE.png"/>
-          <div style="position:absolute;top:35%;left:12%;">Haut de page</div>
-        </a>
-      </div>
-      <div id="services">
-        <h2 class="titres reveal"> <b> NOS SERVICES</b></h2>
-        <div class="flex-container">
-          <a href="developpement-web.html">
-          <div id="panneau-web" class="panneau-service">
-            <div class="title-pannel">
-              <h3> DÉVELOPPEMENT WEB</h3>
-            </div>
-            <div class="text-pannel">
-              <p> Un site internet sur mesure !<br>
+          <div class="text-pannel">
+            <p> Un site internet sur mesure !<br>
             </div>
             <div class="logo-pannel">
               <img id="fleche-pannel" src="Assets/FLECHE-SEULE.png"></p>
             </div>
           </div>
-          </a>
-          <a href=creation-graphique.html>
-            <div id="panneau-graphique" class="panneau-service">
-              <div class="title-pannel">
-                <h3> CRÉATION GRAPHIQUE</h3>
-              </div>
-              <div class="text-pannel">
+        </a>
+        <a href=creation-graphique.html>
+          <div id="panneau-graphique" class="panneau-service">
+            <div class="title-pannel">
+              <h3> CRÉATION GRAPHIQUE</h3>
+            </div>
+            <div class="text-pannel">
               <p> Une identité unique et remarquable !<br>
               </div>
               <div class="logo-pannel">
-              <img id="fleche-pannel" src="Assets/FLECHE-SEULE.png"></p>
+                <img id="fleche-pannel" src="Assets/FLECHE-SEULE.png"></p>
               </div>
             </div>
           </a>
@@ -87,43 +87,43 @@
               </div>
               <div class="text-pannel">
                 <p> Une communauté à votre image !<br>
+                </div>
+                <div class="logo-pannel">
+                  <img id="fleche-pannel" src="Assets/FLECHE-SEULE.png"></p>
+                </div>
               </div>
-              <div class="logo-pannel">
-                <img id="fleche-pannel" src="Assets/FLECHE-SEULE.png"></p>
-              </div>
+            </a>
           </div>
-        </a>
         </div>
-      </div>
         <h2 class="titres reveal"><b> PIX'N COM : DIGITALE, SOLIDAIRE, RESPONSABLE !</b></h2>
         <div id="flex-mission">
           <div class="img-ampoule">
             <img src="Assets/ampouleV2.png"></div>
-          <div class="texte-mission">
+            <div class="texte-mission">
               <h3>Entreprise, association, collectivités,<br> créons ensemble votre identité de marque !<br>Impacts positifs garantis.</h3><br>
               <h4>L’Agence engagée de Clermont-Ferrand, au cœur du Puy-de-Dôme:</h4>
               <p>L’accueil personnalisé par des projets qui vous ressemblent. <br></p>
               <p>La touche créative d’une équipe aux compétences multiples.<br></p>
               <p>L’acteur de l’ESS qui dynamise votre territoire et contribue à votre politique de Responsabilité Sociétale des Entreprises.<br></p>
               <p>La sensibilité environnementale des sites éco-conçus pour une transition écologique optimisée.</p>
+            </div>
           </div>
-    </div>
-    <div id="nous-choisir">
-      <h2 class="titres reveal"><b>LES ÉTAPES CLÉS DE VOTRE PROJET </b></h2>
-      <img id="fleche" src="Assets/flecheV2.png">
-    </div>
-    <h2 id="contact" class="titres reveal"> <b>CONTACT </b></h2>
+          <div id="nous-choisir">
+            <h2 class="titres reveal"><b>LES ÉTAPES CLÉS DE VOTRE PROJET </b></h2>
+            <img id="fleche" src="Assets/flecheV2.png">
+          </div>
+          <h2 id="contact" class="titres reveal"> <b>CONTACT </b></h2>
           <div class="flex-container" id="div-contact">
             <div class="maps">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.1612223690177!2d3.1288323161000506!3d45.767959121142916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71c38c2ad19ad%3A0xa6d4f21fdb1240ef!2s37%20Rue%20Joseph%20Desaymard%2C%2063000%20Clermont-Ferrand!5e0!3m2!1sfr!2sfr!4v1664969320032!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-          <div class="contact-texte">
-            <p> <img class="pointer"src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p> <p> <img class="icon-mail" src="Assets/arroba.png">alissa.geslin@pixncom.com </p> <p><img class="icon-tel" src="Assets/telephone.png"> 07 66 54 51 72 </p> <h4 class="horaires">HORAIRES</h4> <p class="horraire-semaine"> Lundi 9H-12H <br>du mardi au vendredi<br> 9H-17H30
-            </p>
-          </div>
-        <div id="formulaire-contact">
-          <div class="formulaire">
-              <form action="index.php"method="post">
+            <div class="contact-texte">
+              <p> <img class="pointer"src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p> <p> <img class="icon-mail" src="Assets/arroba.png">alissa.geslin@pixncom.com </p> <p><img class="icon-tel" src="Assets/telephone.png"> 07 66 54 51 72 </p> <h4 class="horaires">HORAIRES</h4> <p class="horraire-semaine"> Lundi 9H-12H <br>du mardi au vendredi<br> 9H-17H30
+              </p>
+            </div>
+            <div id="formulaire-contact">
+              <div class="formulaire">
+                <form action="index.php"method="post">
                   <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
                   <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
                   <input type="email" name="email" class="form-control" id="mail" placeholder="Mail *">
@@ -131,22 +131,22 @@
                   <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
                   <p class="desQuestion"> * champ obligatoire</p>
                   <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
-              </form>
-              <?php
+                </form>
+                <?php
 
-              use PHPMailer\PHPMailer\PHPMailer;
+                use PHPMailer\PHPMailer\PHPMailer;
 
-              //Pour utiliser notre objet PHPMailer
-              use PHPMailer\PHPMailer\Exception;
+                //Pour utiliser notre objet PHPMailer
+                use PHPMailer\PHPMailer\Exception;
 
-              // Pour utiliser l'objet Exeption
+                // Pour utiliser l'objet Exeption
 
-              //require 'vendor/autoload.php'; //L'autoload permet d'eviter de mettre des require partout
-              require 'PHPMailer/src/Exception.php';
-              require 'PHPMailer/src/PHPMailer.php';
-              require 'PHPMailer/src/SMTP.php';
+                //require 'vendor/autoload.php'; //L'autoload permet d'eviter de mettre des require partout
+                require 'PHPMailer/src/Exception.php';
+                require 'PHPMailer/src/PHPMailer.php';
+                require 'PHPMailer/src/SMTP.php';
 
-              if(!empty($_POST) && $_SERVER['HTTP_HOST'] == 'localhost'){
+                if(!empty($_POST) && $_SERVER['HTTP_HOST'] == 'localhost'){
 
 
                   $email = htmlspecialchars($_POST['email']);
@@ -157,70 +157,71 @@
                   $erreur = NULL;
                   if (!isset($erreur)) {
 
-                      $mail = new PHPMailer(true);
+                    $mail = new PHPMailer(true);
 
-                      try {
+                    try {
 
-                          $mail->isSMTP(); //Pour preciser que c'est du SMTP
-                          $mail->Host = 'smtp.gmail.com';  // Le serveur smtp de google
-                          $mail->SMTPAuth = true;                               // On active l'authentification
-                          $mail->Username = 'maxime.cougourdan@gmail.com';                 // SMTP username
-                          $mail->Password = 'exehzdnkawgmlaio';                           // Le mot de passe que vous avez récupéré
-                          $mail->SMTPSecure = 'tls';                            // Parameter de sécurité mis sur TLS
-                          $mail->Port = 587;                                    // Le port donne par google pour son SMTP
+                      $mail->isSMTP(); //Pour preciser que c'est du SMTP
+                      $mail->Host = 'smtp.gmail.com';  // Le serveur smtp de google
+                      $mail->SMTPAuth = true;                               // On active l'authentification
+                      $mail->Username = 'maxime.cougourdan@gmail.com';                 // SMTP username
+                      $mail->Password = 'exehzdnkawgmlaio';                           // Le mot de passe que vous avez récupéré
+                      $mail->SMTPSecure = 'tls';                            // Parameter de sécurité mis sur TLS
+                      $mail->Port = 587;                                    // Le port donne par google pour son SMTP
 
-                          $mail->setFrom($email, $nom); // De qui est l' email
-                          $mail->addReplyTo($email, $nom); // Option pour avoir le reply
-                          $mail->addAddress('contact@pixncom.com'); //La boite mail où vous voulez recevoir les mails
+                      $mail->setFrom($email, $nom); // De qui est l' email
+                      $mail->addReplyTo($email, $nom); // Option pour avoir le reply
+                      $mail->addAddress('contact@pixncom.com'); //La boite mail où vous voulez recevoir les mails
 
-                          $Body = "Nom: " . $nom . "\n";
+                      $Body = "Nom: " . $nom . "\n";
 
-                          $Body .= "Email: ";
-                          $Body .= $email;
-                          $Body .= "\r\n";
+                      $Body .= "Email: ";
+                      $Body .= $email;
+                      $Body .= "\r\n";
 
-                          $Body .= "\n Telephone: ";
-                          $Body .= $telephone;
-                          $Body .= "\r\n";
+                      $Body .= "\n Telephone: ";
+                      $Body .= $telephone;
+                      $Body .= "\r\n";
 
-                          $Body .= "Message: ";
-                          $Body .= $message;
-                          $Body .= "\r\n";
+                      $Body .= "Message: ";
+                      $Body .= $message;
+                      $Body .= "\r\n";
 
-                          $mail->isHTML(true); //Met le mail au format HTML
-                          $mail->Subject = "formulaire pixncom"; // On parametre l'objet
-                          $mail->Body = nl2br($Body); // Le message pour les boites html
-                          $mail->AltBody = $Body; //Le message pour les boites non html
-                          $mail->SMTPDebug = 0; //On désactive les logs de debug
+                      $mail->isHTML(true); //Met le mail au format HTML
+                      $mail->Subject = "formulaire pixncom"; // On parametre l'objet
+                      $mail->Body = nl2br($Body); // Le message pour les boites html
+                      $mail->AltBody = $Body; //Le message pour les boites non html
+                      $mail->SMTPDebug = 0; //On désactive les logs de debug
 
 
-                          if ($mail->send()) {
-                              echo '<script>alert("Mail envoyé ! Merci pour votre interêt.")</script>';
-                          } else {
-                              $erreur = '<div>Echec dans l\'envoi du mail</div>';
-                          }
-                      } catch (Exception $e) {
-                          $erreur = $e;
+                      if ($mail->send()) {
+                        echo '<script>alert("Mail envoyé ! Merci pour votre interêt.")</script>';
+                      } else {
+                        $erreur = '<div>Echec dans l\'envoi du mail</div>';
                       }
+                    } catch (Exception $e) {
+                      $erreur = $e;
+                    }
                   }
-              }
-              ?>
-        </div>
-      </div>
-      <script src="app.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    </body>
-
-    <footer>
-      <hr size="1" color="black">
-        <div class="flex-container" id="div-footer">
-          <div >
-            <img id="logo-footer"src="Assets/LOGO-RVB.png" >
+                }
+                ?>
+              </div>
+            </div>
           </div>
-        <div id="contact-footer">
-          <p> 37 rue Joseph Desaymard <br> 63000 Clermont-Ferrand<br> Tél.: 09 54 46 43 58 <br>Mail : contact@inserfac.com<br> www.inserfac.com
-        </div>
-      </div>
-    </footer>
+          <script src="app.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        </body>
+
+        <footer>
+          <hr size="1" color="black">
+          <div class="flex-container" id="div-footer">
+            <div >
+              <img id="logo-footer"src="Assets/LOGO-RVB.png" >
+            </div>
+            <div id="contact-footer">
+              <p> 37 rue Joseph Desaymard <br> 63000 Clermont-Ferrand<br> Tél.: 09 54 46 43 58 <br>Mail : contact@inserfac.com<br> www.inserfac.com
+              </div>
+            </div>
+          </footer>
 </html>
