@@ -430,6 +430,7 @@ img {
 
 .lienRGPD{
   text-decoration: underline;
+  font-size: 80%;
 }
 
 /* ----MEDIA QUERIES---- */
@@ -922,16 +923,18 @@ img {
 
     h3 {
       font-size: 3vw;
-      font-weight: 600;
+      font-weight: bold;
       margin-bottom: 1em;
     }
 
     h4{
-      font-size: 2.5vw;
+      font-size: 2.7vw;
+      font-weight: bold;
       margin-bottom: 1em;
     }
     p {
-      font-size: 2vw;
+      font-size: 2.2vw;
+      font-weight: bold;
       margin-bottom: 1em;
     }
 
@@ -967,7 +970,7 @@ img {
     }
 
     nav {
-      font-size: 100%;
+      font-size: 120%;
     }
 
     .sousmenu {
@@ -984,13 +987,13 @@ img {
     }
 
     .flex-container {
-      height: 40vh;
+      height: 27vh;
       grid-gap: 5%;
       padding: 5%;
     }
 
     .panneau-service {
-      height: 30vh;
+      height: 22vh;
       justify-content: space-between;
     }
 
