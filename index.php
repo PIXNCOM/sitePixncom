@@ -32,7 +32,7 @@
                 <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
               </ul>
             </li>
-            <li><a href="#nous-choisir">NOUS CHOISIR</a></li>
+            <li><a href="#nous-choisir">VOTRE PROJET</a></li>
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
