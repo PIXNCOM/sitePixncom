@@ -132,7 +132,16 @@
                   <p class="desQuestion"> * champ obligatoire</p>
                   <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
                 </form>
+                <div id="popup1" class="overlay">
+                	<div class="popup">
+                		<a class="close" href="#">&times;</a>
+                		<div class="content">
+                			<center>Merci de nous avoir contacté !</center>
+                		</div>
+                	</div>
+                </div>
                 <?php
+                header("Location: index.php#popup1");
 
                 use PHPMailer\PHPMailer\PHPMailer;
 
