@@ -3,7 +3,7 @@
 <head>
   <title>Pix'n com</title>
   <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport">
     <meta name="description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis."/>
     <meta name="keyword" content="Création de sites, Votre site internet, Référencement, cms, Wordpress, Création de site internet, E-commerce, Responsive, Sites internet, Site vitrin, Référencement naturel, Prestashop, Création graphique, Identité visuelle, Designer, Supports de communication, Outils de communication, Webdesigner, Agence web, Webmarketing, Refonte, Stratégie de communication, Réseaux sociaux,"/>
   <link rel="icon" href="Assets/FLECHE-SEULE.png">
