@@ -613,8 +613,12 @@ img {
   }
 
   .fleche-realisations{
-    height: 80px;
-    width: 80px;
+    height: 160px;
+    width: 160px;
+  }
+
+  .nos-realisation {
+    margin-top: 15px;
   }
 
   #nos-realisation{
@@ -889,8 +893,13 @@ img {
       margin-left: 35%;
     }
 
-    .texte-graphique {
+    .texte-graphisme {
       margin-left: 35%;
+    }
+
+    .fleche-realisations{
+      height: 100px;
+      width: 100px;
     }
 
     a.button {
