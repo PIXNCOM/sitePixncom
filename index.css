@@ -27,7 +27,7 @@ h4{
   margin-bottom: 1em;
 }
 p {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   margin-bottom: 1em;
 }
 
@@ -93,7 +93,7 @@ p {
 
 .flex-container {
   display: grid;
-  grid-gap: 18%;
+  grid-gap: 16%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 300px);
   padding: 2% 15%;
@@ -102,7 +102,7 @@ p {
 .panneau-service {
   display: flex;
   flex-direction: column;
-  height: 33vh;
+  height: 35vh;
   text-decoration: none;
   border-color: rgb(200,230,232);
   border-style: solid;
@@ -188,7 +188,7 @@ li a:hover:after {
 .sousmenu li {
   float: none;
   width: auto;
-  margin: 3px 0;
+  margin: 10px 0;
 }
 
 nav > ul li:hover .sousmenu {
@@ -230,7 +230,6 @@ nav > ul li:hover .sousmenu {
 #div-contact {
   display: flex;
   align-items: center;
-  height: 50%;
   width: 90%;
   border: solid;
   border-color: rgb(0, 164, 145);
@@ -245,9 +244,6 @@ nav > ul li:hover .sousmenu {
   margin-right: 8%;
 }
 
-.desQuestion{
-  /* text-align: center;*/
-}
 .contact-texte{
   margin-left: -21%;
   width: auto;
@@ -302,11 +298,16 @@ nav > ul li:hover .sousmenu {
   --bs-btn-bg: rgb(0,165, 146);
   --bs-btn-border-color: rgb(0,165, 146);
 }
+
+#rgdp {
+  vertical-align: top;
+  margin-top: 8px;
+}
+
 #div-footer {
   display: flex;
   align-items: center;
   height: auto;
-  /*background-color:;*/
   margin-left: 50px;
 }
 
@@ -315,8 +316,7 @@ nav > ul li:hover .sousmenu {
   height: 100px;
 }
 
-#contact-footer{
-}
+
 .titres {
   margin-top: 3%;
   text-align: center;
@@ -503,37 +503,24 @@ img {
 
   .img-ampoule{
     width: 100%;
-    height: auto;
     margin: auto;
   }
 
-  .texte-mission{
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
   .maps{
     display: none;
   }
 
   #div-contact {
-    display: flex;
-    align-items: center;
     height: 450px;
     width: auto;
-    border: solid;
-    border-color: rgb(0, 164, 145);
     margin-right: 5%;
     padding-left: 5%;
-    padding-right: 10px;
-    box-shadow: 10px 5px 5px rgb(192,192,192);
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
 
   .contact-texte{
     width: 300px;
-    text-align: center;
     margin-bottom: 100px;
     margin-left: -30px;
   }
@@ -542,84 +529,67 @@ img {
     min-width: 300px;
     height: auto;
     padding-right: 0px;
-    align-items: right;
 
   }
+
   #div-footer {
-    display: flex;
-    align-items: center; /* Utilisez d’autres valeurs pour voir le résultat */
     width: 90%;
-    height: auto;
-    background-color: ;
-    margin-left: 50px;
   }
+
   #logo-footer{
     width: 100px;
     height: 70px;
   }
 
-  #contact-footer{
+}
+@media screen and (max-width: 425px){
+
+  h1 {
+    font-size: .8em;
   }
 
-  }@media screen and (max-width: 425px){
-
-    h1 {
-      font-size: .8em;
-    }
-
-    #logors{
-      gap: 5px;
-    }
-
-    .rs{
-      width: 20px;
-      height: 20px;
-    }
-
-    #div-contact {
-      display: flex;
-      align-items: center;
-      height: 600px;
-      width: 350px;
-      background-color: ;
-      border: solid;
-      border-color: rgb(0, 164, 145);
-      margin-right: 5%;
-      padding-left: 5%;
-      padding-right: 10px;
-      box-shadow: 10px 5px 5px rgb(192,192,192);
-      flex-direction: column;
-
-    }
-
-    .contact-texte{
-      margin-left: -150px;
-      width: 300px;
-      text-align: center;
-      margin-bottom: 0px;
-      margin-left: -20px;
-      margin-top: 10px;
-    }
-
-    #formulaire-contact{
-      min-width: 300px;
-      height: auto;
-      padding-right: 0px;
-      align-items: right;
-      margin-left: -340px;
-      margin-top: 200px;
-
-    }
-    .horraire-semaine{
-      text-align: center;
-      margin-left: 20px;
-    }
-    .horaires{
-      color: rgb(245, 176, 0);
-      text-align: center;
-      margin-left: 20px;
-    }
+  #logors{
+    gap: 5px;
   }
+
+  .rs{
+    width: 20px;
+    height: 20px;
+  }
+
+  #div-contact {
+    height: 600px;
+    width: 350px;
+    margin-right: 5%;
+    padding-left: 5%;
+    flex-direction: column;
+
+  }
+
+  .contact-texte{
+    margin-left: -150px;
+    width: 300px;
+    margin-bottom: 0px;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+
+  #formulaire-contact{
+    min-width: 300px;
+    height: auto;
+    padding-right: 0px;
+    margin-left: -340px;
+    margin-top: 200px;
+
+  }
+  .horraire-semaine{
+    margin-left: 20px;
+  }
+  .horaires{
+    margin-left: 20px;
+  }
+}
+
   @media screen and (max-width: 375px){
 
   }
@@ -647,18 +617,23 @@ img {
     margin-top: 5%;
   }
 
-  .flecheCom{
-    height: 80px;
-    width: 80px;
-
+  .fleche-realisations{
+    height: 160px;
+    width: 160px;
   }
+
+  .nos-realisation {
+    margin-top: 15px;
+  }
+
   #nos-realisation{
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 80%;
+    margin-top: 5%;
   }
 
   .realisation{
@@ -719,59 +694,6 @@ img {
     margin-top: 5%;
   }
 
-  .flechegraphisme{
-    height: 80px;
-    width: 80px;
-  }
-  #nos-realisation{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: flex-end;
-    align-items: center;
-    height: 80%;
-  }
-  .realisation{
-    width: 80%;
-    height: 40%;
-    background-color: #fff;
-    display: flex;
-  }
-  .bouton-contact-bas{
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    border: 2px;
-    border-color: rgb(0, 165, 146);
-    height: 30%;
-    padding-bottom: 5%;
-    color: rgb(0, 165, 146);
-  }
-
-  @media screen and (max-width: 800px){
-
-    .flechegraphisme{
-      height: 80px;
-      width: 80px;
-    }
-    .realisation{
-      width: 80%;
-      height: 20%;
-      background-color: #fff;
-      display: flex;
-    }
-    .bouton-contact-bas{
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      border: 2px;
-      border-color: rgb(0, 165, 146);
-      height: 15%;
-      padding-bottom: 5%;
-      color: rgb(0, 165, 146);
-    }
-  }
-
   @media screen and (max-width: 425px){
     .texte-graphisme {
       margin-left: 35%;
@@ -797,24 +719,6 @@ img {
   .texte-developpement{
     margin-top: 2%;
     margin-left: 45vw;
-  }
-
-  .flecheDeveloppement{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 80px;
-    width: 80px;
-    margin: auto;
-  }
-  #nos-realisation{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    height: 80%;
-    margin-top: 5%;
   }
 
   .titre-realisation {
@@ -978,8 +882,29 @@ img {
       font-size: 80%;
     }
 
+    .sousmenu li {
+      margin: 5px 0;
+    }
+
     #nos-realisation {
       height: 60vh;
+    }
+
+    .texte-community {
+      margin-left: 35%;
+    }
+
+    .texte-developpement {
+      margin-left: 35%;
+    }
+
+    .texte-graphisme {
+      margin-left: 35%;
+    }
+
+    .fleche-realisations{
+      height: 100px;
+      width: 100px;
     }
 
     a.button {
@@ -1025,7 +950,7 @@ img {
       padding-right: 0px;
     }
   }
-
+  
   .overlay {
     position: fixed;
     top: 0;
