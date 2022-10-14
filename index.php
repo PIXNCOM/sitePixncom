@@ -141,7 +141,7 @@
                   <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
                   <p class="desQuestion"> * champ obligatoire</p>
                     <div>
-                        <input type="checkbox" id="rgdp" name="rgpd" required >
+                        <input type="checkbox" id="rgpd" name="rgpd" required >
                         <label for="rgpd">j'accepte les conditions rgpd <br> <a class="lienRGPD" href="#">lire les conditions rgpd </a></label>
                     </div>
                     <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
