@@ -97,10 +97,12 @@
             </a>
           </div>
         </div>
-        <h2 class="titres reveal"><b> PIX'N COM : DIGITALE, SOLIDAIRE, RESPONSABLE !</b></h2>
-        <div id="flex-mission">
-          <div class="img-ampoule">
-            <img alt="Une ampoule avec le logo simplifie de l'entreprise Pix'ncom" src="Assets/ampouleV2.png"></div>
+        <div id="missions">
+          <h2 class="titres reveal"><b> PIX'N COM : DIGITALE, SOLIDAIRE, RESPONSABLE !</b></h2>
+          <div id="flex-mission">
+            <div class="img-ampoule">
+              <img alt="Une ampoule avec le logo simplifie de l'entreprise Pix'ncom" src="Assets/ampouleV2.png">
+            </div>
             <div class="texte-mission">
               <h3>Entreprise, association, collectivités,<br> créons ensemble votre identité de marque !<br>Impacts positifs garantis.</h3><br>
               <h4>L’Agence engagée de Clermont-Ferrand, au cœur du Puy-de-Dôme:</h4>
@@ -110,6 +112,7 @@
               <p>La sensibilité environnementale des sites éco-conçus pour une transition écologique optimisée.</p>
             </div>
           </div>
+        </div>
           <div id="nous-choisir">
             <h2 class="titres reveal"><b>LES ÉTAPES CLÉS DE VOTRE PROJET </b></h2>
             <img alt="Timeline simple montrant les grandes etapes d'un projet" id="fleche" src="Assets/flecheV2.png">

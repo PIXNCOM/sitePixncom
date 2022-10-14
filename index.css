@@ -91,17 +91,30 @@ p {
   justify-content: center;
 }
 
+#services {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#missions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .flex-container {
   display: grid;
   grid-gap: 16%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 300px);
   padding: 2% 15%;
 }
 
 .panneau-service {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 35vh;
   text-decoration: none;
   border-color: rgb(200,230,232);
@@ -391,7 +404,7 @@ img {
   display: flex;
   flex-direction: row;
   height: auto;
-  padding: 2% 20%;
+  padding: 2% 17%;
   gap: 10%;
 }
 
@@ -950,7 +963,7 @@ img {
       padding-right: 0px;
     }
   }
-  
+
   .overlay {
     position: fixed;
     top: 0;
