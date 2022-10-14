@@ -230,7 +230,6 @@ nav > ul li:hover .sousmenu {
 #div-contact {
   display: flex;
   align-items: center;
-  height: 50%;
   width: 90%;
   border: solid;
   border-color: rgb(0, 164, 145);
@@ -299,6 +298,12 @@ nav > ul li:hover .sousmenu {
   --bs-btn-bg: rgb(0,165, 146);
   --bs-btn-border-color: rgb(0,165, 146);
 }
+
+#rgdp {
+  vertical-align: top;
+  margin-top: 8px;
+}
+
 #div-footer {
   display: flex;
   align-items: center;
@@ -625,7 +630,7 @@ img {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 80%;
     margin-top: 5%;
