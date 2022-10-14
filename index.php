@@ -3,6 +3,8 @@
 <head>
   <title>Pix'n com</title>
   <meta charset="utf-8" />
+    <meta name="description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis."/>
+    <meta name="keyword" content="Création de sites, Votre site internet, Référencement, cms, Wordpress, Création de site internet, E-commerce, Responsive, Sites internet, Site vitrin, Référencement naturel, Prestashop, Création graphique, Identité visuelle, Designer, Supports de communication, Outils de communication, Webdesigner, Agence web, Webmarketing, Refonte, Stratégie de communication, Réseaux sociaux,"/>
   <link rel="icon" href="Assets/FLECHE-SEULE.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
