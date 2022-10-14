@@ -102,7 +102,7 @@
             <div class="texte-mission">
               <h3>Entreprise, association, collectivités,<br> créons ensemble votre identité de marque !<br>Impacts positifs garantis.</h3><br>
               <h4>L’Agence engagée de Clermont-Ferrand, au cœur du Puy-de-Dôme:</h4>
-              <p>L’accueil personnalisé par des projets qui vous ressemblent. <br></p>
+              <p>L’accueil personnalisé pour des projets qui vous ressemblent. <br></p>
               <p>La touche créative d’une équipe aux compétences multiples.<br></p>
               <p>L’acteur de l’ESS qui dynamise votre territoire et contribue à votre politique de Responsabilité Sociétale des Entreprises.<br></p>
               <p>La sensibilité environnementale des sites éco-conçus pour une transition écologique optimisée.</p>
@@ -133,7 +133,7 @@
                   <p class="desQuestion"> * champ obligatoire</p>
                     <div>
                         <input type="checkbox" id="rgdp" name="rgpd" required >
-                        <label for="rgpd">j'accepte les conditions rgpd  <a class="lienRGPD" href="#">lire les conditions rgpd </a></label>
+                        <label for="rgpd">j'accepte les conditions rgpd <br> <a class="lienRGPD" href="#">lire les conditions rgpd </a></label>
                     </div>
                     <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
                 </form>
