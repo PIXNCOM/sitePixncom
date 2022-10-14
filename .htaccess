@@ -1,0 +1,21 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/index.php [NC,OR]
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/ [NC,OR]
+RewriteCond %{HTTP_HOST} ^https://pixncom.com/index.php [NC,]
+RewriteRule ^(.*)$ http://pixncom.com/$1 [L,R=301,NC]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/developpement-web.html [NC,OR]
+RewriteRule ^(.*)$ https://pixncom.com/developpement-web.html/$1 [L,R=301,NC]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/creation-graphique.html [NC,OR]
+RewriteRule ^(.*)$ https://pixncom.com/creation-graphique.html/$1 [L,R=301,NC]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/contact.html [NC,OR]
+RewriteRule ^(.*)$ https://pixncom.com/contact.html/$1 [L,R=301,NC]
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/community-manager.html [NC,OR]
+RewriteRule ^(.*)$ https://pixncom.com/community-manager.html/$1 [L,R=301,NC]
