@@ -66,26 +66,24 @@ img {
   position: relative;
   display: flex;
   flex-direction: row;
-  height: 95vh;
-  background-image: url('ASSETS2/Plan de Travail 1.png'), url('IMG/IMG_HEADER.jpg');
-  background-size: 100% 95%;
+  height: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.fondblancheader {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #header-left {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 45%;
+  width: 50%;
   height: 40%;
-  margin-top: 15%;
   gap: 100px;
-}
-
-#header-left img {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
 }
 
 #logopixncom{
@@ -97,7 +95,13 @@ img {
 #nav-logos {
   display: flex;
   justify-content: center;
-  gap: 180px;
+  gap: 130px;
+}
+
+.resteheader {
+  position: absolute;
+  top: 40%;
+  right: 30%;
 }
 
 #logors {
@@ -116,13 +120,30 @@ img {
   display: block;
 }
 
+.imgheaderdroite {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.imgheaderdroite img {
+  width: 80%;
+}
+
+.header-droite {
+  z-index: 5;
+}
+
 #text-header{
   display: flex;
   flex-direction: column;
   height: 90%;
   justify-content: center;
-  margin-left: 15%;
   margin-top: 5%;
+  z-index: 10;
 }
 
 
@@ -136,6 +157,7 @@ img {
   justify-content: center;
   border: 2px;
   margin-left: 20%;
+  margin-top: 15%;
 }
 
 a.button {
@@ -152,7 +174,7 @@ a.button {
 }
 
 a.button:hover{
-  color : rgb(245, 176, 0);
+  color : white;
   border-color: rgb(245, 176, 0);
 }
 
@@ -596,7 +618,7 @@ a {
 }
 
 .slide {
-  opacity: 0;
+  opacity: 1;
   transform: translateX(-400px);
 }
 

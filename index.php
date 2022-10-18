@@ -28,29 +28,40 @@
     </ul>
   </nav>
   <div id="header">
-
+    <div class="imgheaderdroite">
+      <img src="IMG/IMG_HEADER.jpg" alt="">
+    </div>
     <div id=header-left class="slide">
-      <div id="nav-logos">
-        <div id="logors">
-          <a href="https://fr.linkedin.com/company/pix-n-com/">
-            <img alt="Logo linkedin noir" class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
-          </a>
-          <a href="https://www.instagram.com/?hl=fr">
-            <img alt="Logo instagram noir" class="rs" src="Assets/iconmonstr-instagram-11-240.png">
-          </a>
+      <div class="fondblancheader">
+        <img src="TRUC-BLANC/Plan de Travail 1.png">
+      </div>
+      <div class="resteheader">
+        <div id="nav-logos">
+          <div id="logors">
+            <a href="https://fr.linkedin.com/company/pix-n-com/">
+              <img alt="Logo linkedin noir" class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
+            </a>
+            <a href="https://www.instagram.com/?hl=fr">
+              <img alt="Logo instagram noir" class="rs" src="Assets/iconmonstr-instagram-11-240.png">
+            </a>
+          </div>
+          <div id="logopixncom">
+            <img id="logo" alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
+          </div>
         </div>
-        <div id="logopixncom">
-          <img id="logo" alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
+        <div class="bouton-contact">
+          <a href="#contact" class="button"> Contactez-nous </a>
         </div>
       </div>
-      <div class="bouton-contact">
-        <a href="#contact" class="button"> Contactez-nous </a>
+
+    </div>
+    <div class="header-droite">
+      <div id="text-header">
+        <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
+        <h3>Développement Web - Création Graphique - Community Management </h3>
       </div>
     </div>
-    <div id="text-header">
-      <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
-      <h3>Développement Web - Création Graphique - Community Management </h3>
-    </div>
+
   </div>
   <div id="scrollUp">
     <a href="#top"><img alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"/>
