@@ -16,9 +16,24 @@ const handleIntersect = function (entries, observer) {
 
 }
 
+const handleSlide = function (entries, slider) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add('slide-right');
+      slider.unobserve(entry.target);
+    }
+  });
+
+}
+
 const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('.reveal').forEach(function(r) {
       observer.observe(r);
+});
+
+const slider = new IntersectionObserver(handleSlide, options);
+document.querySelectorAll('.slide').forEach(function(r) {
+      slider.observe(r);
 });
 
 jQuery(function(){

@@ -11,11 +11,25 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body style=background-color:rgb(237,240,242)>
+  <nav>
+    <ul id="flex-menus">
+      <li><a href="index.php">ACCUEIL</a></li>
+      <li class="menu-deroulant">SERVICES
+        <div class="ssmenu">
+          <ul class="sousmenu">
+            <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
+            <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
+            <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="#nous-choisir">VOTRE PROJET</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
   <div id="header">
-    <div id="top-header">
-      <div id="logopixncom">
-        <img id="logo" alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
-      </div>
+
+    <div id=header-left class="slide">
       <div id="nav-logos">
         <div id="logors">
           <a href="https://fr.linkedin.com/company/pix-n-com/">
@@ -25,28 +39,17 @@
             <img alt="Logo instagram noir" class="rs" src="Assets/iconmonstr-instagram-11-240.png">
           </a>
         </div>
-        <nav>
-          <ul id="flex-menus">
-            <li><a href="index.php">ACCUEIL</a></li>
-            <li class="menu-deroulant ">SERVICES
-              <ul class="sousmenu">
-                <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
-                <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
-                <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
-              </ul>
-            </li>
-            <li><a href="#nous-choisir">VOTRE PROJET</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
+        <div id="logopixncom">
+          <img id="logo" alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
+        </div>
+      </div>
+      <div class="bouton-contact">
+        <a href="#contact" class="button"> Contactez-nous </a>
       </div>
     </div>
     <div id="text-header">
       <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
       <h3>Développement Web - Création Graphique - Community Management </h3>
-    </div>
-    <div class="bouton-contact">
-      <a href="#contact" class="button"> NOUS CONTACTER </a>
     </div>
   </div>
   <div id="scrollUp">
