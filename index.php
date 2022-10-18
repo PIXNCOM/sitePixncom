@@ -18,7 +18,7 @@
       </div>
       <div id="nav-logos">
         <div id="logors">
-          <a href="https://fr.linkedin.com/">
+          <a href="https://fr.linkedin.com/company/pix-n-com/">
             <img alt="Logo linkedin noir" class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
           </a>
           <a href="https://www.instagram.com/?hl=fr">
