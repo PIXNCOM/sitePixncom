@@ -14,76 +14,60 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body style=background-color:rgb(237,240,242)>
-  <div id="header">
-    <div id="top-header">
-      <div id="logopixncom">
-        <img id="logo" alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
-      </div>
-      <div id="nav-logos">
-        <div id="logors">
-          <a href="https://fr.linkedin.com/company/pix-n-com/">
-            <img alt="Logo linkedin noir" class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
-          </a>
-          <a href="https://www.instagram.com/?hl=fr">
-            <img alt="Logo instagram noir" class="rs" src="Assets/iconmonstr-instagram-11-240.png">
-          </a>
-        </div>
-        <nav>
-          <ul id="flex-menus">
-            <li><a href="index.php">ACCUEIL</a></li>
-            <li class="menu-deroulant ">SERVICES
-              <ul class="sousmenu">
-                <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
-                <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
-                <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="navbar">
+    <div class="imgnav">
+      <a href="#top"><img alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
     </div>
-    <div id="text-header" style="padding-bottom: 12%">
-      <h1><b>CONTACT</b></h1>
-    </div>
-  </div>
-  <div id="scrollUp">
-    <a href="#top"><img alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"/>
-      <div style="position:absolute;top:35%;left:12%;">Haut de page</div>
-    </a>
-  </div>
-  <div class="titre-contact" >
-    <h2 id="contact" class="titres reveal"> <b>NOUS CONTACTER </b></h2>
-  </div>
-  <div class="flex-container" id="div-contact">
-
-    <div class="maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.1612223690177!2d3.1288323161000506!3d45.767959121142916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71c38c2ad19ad%3A0xa6d4f21fdb1240ef!2s37%20Rue%20Joseph%20Desaymard%2C%2063000%20Clermont-Ferrand!5e0!3m2!1sfr!2sfr!4v1664969320032!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="contact-texte">
-      <p> <img alt="logo pointeur de position" class="pointer"src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p>
-      <p> <img alt="logo arobase adresse mail" class="icon-mail" src="Assets/arroba.png">alissa.geslin@pixncom.com </p>
-      <p><img alt="logo d'un telephone" class="icon-tel" src="Assets/telephone.png"> 07 66 54 51 72 </p>
-      <h4 class="horaires">HORAIRES</h4>
-      <p class="horraire-semaine"> Lundi 9H-12H <br>du mardi au vendredi<br> 9H-17H30</p>
-    </div>
-    <div id="formulaire-contact">
-      <div class="formulaire">
-        <p class="desQuestion"> <img id="flecheSeule" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">Des questions, un projet ?<br> prenons un café et parlons-en.</p>
-        <form action="index.php"method="post">
-          <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
-          <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
-          <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
-
-          <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
-          <p class="desQuestion"> * champ obligatoire</p>
-          <div>
-            <input type="checkbox" id="rgdp" name="rgpd" required >
-            <label for="rgpg">j'accepte les conditions rgpd<br>  <a href="#" class="lienRGPD">lire les conditions rgpd </a></label>
+    <nav>
+      <ul id="flex-menus">
+        <li><a href="index.php">ACCUEIL</a></li>
+        <li id="hovermenu" class="menu-deroulant">SERVICES
+          <div class="ssmenu togglebox">
+            <ul class="sousmenu">
+              <li class="toglecontent"><a href="developpement-web.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-computer-12-240.png" alt="logo developpement web">DÉVELOPPEMENT WEB</a></li>
+              <li class="toglecontent"><a href="creation-graphique.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-pencil-8-240.png" alt="logo creation graphique">CRÉATION GRAPHIQUE</a></li>
+              <li class="toglecontent"><a href="community-manager.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-slack-6-240.png" alt="logo community management">COMMUNITY MANAGER</a></li>
+            </ul>
           </div>
-          <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
-        </form>
+        </li>
+        <li><a href="#nous-choisir">VOTRE PROJET</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container-contact">
+    <div class="flex-container" id="contactbox">
+      <div class="contact-texte">
+        <h3 class="titres"><center>
+          Nous Contacter
+        </center></h3>
+        <p> <img alt="logo pointeur de position" class="pointer"src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p>
+        <p> <img alt="logo arobase adresse mail" class="icon-mail" src="Assets/arroba.png">alissa.geslin@pixncom.com </p>
+        <p><img alt="logo d'un telephone" class="icon-tel" src="Assets/telephone.png"> 07 66 54 51 72 </p>
+        <h4 class="horaires">HORAIRES</h4>
+        <p class="horraire-semaine"> Lundi 9H-12H <br>du mardi au vendredi<br> 9H-17H30</p>
       </div>
+      <div id="formulaire-contact" class="contactform">
+        <div class="formulaire">
+          <p class="desQuestion"> <img id="flecheSeule" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">Des questions, un projet ?<br> prenons un café et parlons-en.</p>
+          <form action="index.php"method="post">
+            <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
+            <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
+            <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
+
+            <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
+            <p class="desQuestion"> * champ obligatoire</p>
+            <div>
+              <input type="checkbox" id="rgdp" name="rgpd" required >
+              <label for="rgpg">j'accepte les conditions rgpd<br>  <a href="#" class="lienRGPD">lire les conditions rgpd </a></label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="titre-contact" >
+      <h2 id="contact" class="titres reveal"> <b>CRÉONS ENSEMBLE </b></h2>
     </div>
   </div>
   <script src="app.js"></script>

@@ -317,6 +317,19 @@ li a:hover:after {
   box-shadow: 10px 5px 5px rgb(192,192,192);
 
 }
+
+#contactbox {
+  display: flex;
+    justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  border: solid;
+  border-color: black;
+  margin : 6%;
+  padding-right: 10px;
+  box-shadow: 10px 5px 5px rgb(192,192,192);
+}
+
 .maps{
   margin-left: -7%;
   margin-right: 8%;
@@ -356,7 +369,6 @@ li a:hover:after {
   width: 40%;
   margin-left: -10%;
   padding-right: 2%;
-  align-items: right;
 }
 .form-control{margin: 10px;
   border: 1px solid black;
@@ -466,7 +478,7 @@ li a:hover:after {
   display: grid;
   grid-gap: 16%;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2% 15%;
+  padding: 2% 13%;
 }
 
 .panneau-service {
@@ -478,6 +490,10 @@ li a:hover:after {
   background-color: white;
   border-style: none;
   border-radius: 50px;
+}
+
+#panneau-graphique {
+  margin-top: 50px;
 }
 
 .panneau-service:hover {
@@ -534,8 +550,8 @@ a {
   height: 50%;
   justify-content: right;
   align-items: end;
-  padding-bottom: 15px;
-  padding-right: 15px;
+  padding-bottom: 40px;
+  padding-right: 40px;
 }
 
 #fleche-pannel{
@@ -661,6 +677,18 @@ a {
   width: 160px;
 }
 
+.container-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactform {
+}
+
+.titre-contact {
+  display: flex;
+  align-items: center;
+}
 /* ---TRANSITIONS TITRES--- */
 
 
