@@ -180,19 +180,36 @@ a.button:hover{
 
 /* ---NAVBAR--- */
 
+.navbar {
+  height: 70px;
+}
+
+.imgnav {
+  position: fixed;
+  width: 90px;
+  z-index: 101;
+  top: .5%;
+  left: .5%;
+}
+
 nav {
+  position: fixed;
   display : flex;
   justify-content: right;
   margin-left: auto;
   font-size: 1.5vw;
   font-weight: bold;
   background-color: white;
+  z-index: 100;
+  width: 100%;
 }
 
 nav ul {
+  display: flex;
   list-style-type: none;
   z-index: 5;
   margin-bottom: 0;
+  align-items: baseline;
 }
 
 nav ul li {
@@ -231,14 +248,29 @@ li a:hover:after {
   background: #444;
 }
 
+.ssmenu {
+  transition: transform 1s;
+}
+
 .sousmenu li {
   float: none;
   width: auto;
-  margin: 10px 0;
+  margin: 28px 0;
+  margin-left: 15px;
+  transition: transform 1s;
 }
 
-nav > ul li:hover ~ .ssmenu {
+.sousmenu li:hover {
+  transform: translateX(20px);
+}
+
+nav > ul li:hover .ssmenu {
   display: block;
+  transform: translateX(20px);
+}
+
+nav > ul li:hover .sousmenu {
+  transform: translateX(20px);
 }
 
 .ssmenu {
@@ -247,10 +279,11 @@ nav > ul li:hover ~ .ssmenu {
   border: none;
   border-width: 1px;
   border-radius: 5px;
-  border-color: grey;
+  border-color: black;
   background-color: white;
   width: 300px;
-  height: 150px;
+  height: 200px;
+  top: 60px;
 }
 
 
@@ -271,6 +304,11 @@ nav > ul li:hover ~ .ssmenu {
   margin: 0;
 }
 
+.logos-sousmenu {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
 /* ---FORMULAIRE CONTACT--- */
 
 #div-contact {
@@ -278,7 +316,7 @@ nav > ul li:hover ~ .ssmenu {
   align-items: center;
   width: 90%;
   border: solid;
-  border-color: rgb(0, 164, 145);
+  border-color: black;
   margin : 6%;
   padding-left: 7%;
   padding-right: 10px;
@@ -327,7 +365,7 @@ nav > ul li:hover ~ .ssmenu {
   align-items: right;
 }
 .form-control{margin: 10px;
-  border: 1px solid rgb(0, 165, 146);
+  border: 1px solid black;
   margin-block-start: auto;
   align-items: right;
 }
@@ -627,6 +665,12 @@ a {
   transform: translateX(0);
   transition: 1.5s cubic-bezier(.5, .7, .5, .8);
 }
+
+.togglecontent {
+  transform: translateX(0);
+  transition: 5s;
+}
+
 
 /* ----MEDIA QUERIES---- */
 

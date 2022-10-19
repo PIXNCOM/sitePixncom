@@ -11,22 +11,27 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body style=background-color:rgb(237,240,242)>
-  <nav>
-    <ul id="flex-menus">
-      <li><a href="index.php">ACCUEIL</a></li>
-      <li class="menu-deroulant">SERVICES
-        <div class="ssmenu">
-          <ul class="sousmenu">
-            <li><a href="developpement-web.html">DÉVELOPPEMENT WEB</a></li>
-            <li><a href="creation-graphique.html">CRÉATION GRAPHIQUE</a></li>
-            <li><a href="community-manager.html">COMMUNITY MANAGER</a></li>
-          </ul>
-        </div>
-      </li>
-      <li><a href="#nous-choisir">VOTRE PROJET</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-  </nav>
+  <div class="navbar">
+    <div class="imgnav">
+      <a href="#top"><img alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
+    </div>
+    <nav>
+      <ul id="flex-menus">
+        <li><a href="index.php">ACCUEIL</a></li>
+        <li id="hovermenu" class="menu-deroulant">SERVICES
+          <div class="ssmenu togglebox">
+            <ul class="sousmenu">
+              <li class="toglecontent"><a href="developpement-web.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-computer-12-240.png" alt="logo developpement web">DÉVELOPPEMENT WEB</a></li>
+              <li class="toglecontent"><a href="creation-graphique.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-pencil-8-240.png" alt="logo creation graphique">CRÉATION GRAPHIQUE</a></li>
+              <li class="toglecontent"><a href="community-manager.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-slack-6-240.png" alt="logo community management">COMMUNITY MANAGER</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#nous-choisir">VOTRE PROJET</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
   <div id="header">
     <div class="imgheaderdroite">
       <img src="IMG/IMG_HEADER.jpg" alt="">
@@ -41,7 +46,7 @@
             <a href="https://fr.linkedin.com/company/pix-n-com/">
               <img alt="Logo linkedin noir" class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
             </a>
-            <a href="https://www.instagram.com/?hl=fr">
+            <a href="https://www.instagram.com/agence_pix_n_com/">
               <img alt="Logo instagram noir" class="rs" src="Assets/iconmonstr-instagram-11-240.png">
             </a>
           </div>
