@@ -70,7 +70,6 @@
         <p>Développement Web - Création Graphique - Community Management </p>
       </div>
     </div>
-
   </div>
   <div id="scrollUp">
     <a href="#top"><img alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"/>

@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-size: 3.5svw;
+  font-size: 3.5vw;
 }
 
 h2 {
@@ -602,6 +602,11 @@ a {
 
 /* ---PAGES ANNEXES--- */
 
+#nav-headers {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+}
 
 #header-developpement {
   display: flex;
@@ -613,14 +618,9 @@ a {
   background-size: 100% auto;
   text-align: center;
 }
-#text-header-annexes b{
+#text-header-annexes {
   display: flex;
-  flex-direction: column;
-  height: 90%;
-  justify-content: center;
-  margin-top: 5%;
-  z-index: 10;
- font-size: larger;
+  text-align: center;
 }
 
 .bouton-contact-annexes{
@@ -630,28 +630,6 @@ a {
   justify-content: center;
   border: 2px;
   margin-top: 15%;
-}
-
-#header-graphique {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 93vh;
-  background-image: url('IMG/IMG_headerP3.jpg');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  text-align: center;
-}
-
-#header-community {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 93vh;
-  background-image: url('IMG/IMG_headerP4.jpg');
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  text-align: center;
 }
 
 .nos-prestations{
