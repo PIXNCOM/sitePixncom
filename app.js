@@ -36,6 +36,20 @@ document.querySelectorAll('.slide').forEach(function(r) {
       slider.observe(r);
 });
 
+const $hovermenu = document.querySelector('.menu-deroulant')
+const $sousmenu = document.querySelector('.ssmenu')
+const $textmenus = document.querySelector('.sousmenu')
+
+$hovermenu.onmouseenter = () => {
+  $sousmenu.classList.add('menueffet')
+  $textmenus.classList.add('texteeffet')
+}
+
+$hovermenu.onmouseleave = () => {
+  $sousmenu.classList.remove('menueffet')
+  $textmenus.classList.remove('texteeffet')
+}
+
 jQuery(function(){
     $(function () {
         $(window).scroll(function () { //Fonction appelée quand on descend la page

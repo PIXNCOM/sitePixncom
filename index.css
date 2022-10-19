@@ -181,19 +181,20 @@ a.button:hover{
 /* ---NAVBAR--- */
 
 .navbar {
-  height: 70px;
+  min-height: 50px;
 }
 
 .imgnav {
   position: fixed;
-  width: 90px;
+  width: 80px;
   z-index: 101;
-  top: .5%;
+  top: 1%;
   left: .5%;
 }
 
 nav {
   position: fixed;
+  top: 0;
   display : flex;
   justify-content: right;
   margin-left: auto;
@@ -248,34 +249,27 @@ li a:hover:after {
   background: #444;
 }
 
-.ssmenu {
-  transition: transform 1s;
-}
-
 .sousmenu li {
   float: none;
   width: auto;
   margin: 28px 0;
   margin-left: 15px;
-  transition: transform 1s;
 }
 
 .sousmenu li:hover {
   transform: translateX(20px);
 }
 
-nav > ul li:hover .ssmenu {
-  display: block;
-  transform: translateX(20px);
+#hovermenu:hover  {
+  transition: all 2s;
 }
 
-nav > ul li:hover .sousmenu {
-  transform: translateX(20px);
+#hovermenu:hover .sousmenu {
 }
 
 .ssmenu {
   position: absolute;
-  display: none;
+  opacity: 0;
   border: none;
   border-width: 1px;
   border-radius: 5px;
@@ -283,7 +277,7 @@ nav > ul li:hover .sousmenu {
   background-color: white;
   width: 300px;
   height: 200px;
-  top: 60px;
+  top: 70px;
 }
 
 
@@ -479,16 +473,18 @@ nav > ul li:hover .sousmenu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 35vh;
+  height: 40vh;
   text-decoration: none;
-  border-color: rgb(200,230,232);
-  border-style: solid;
-  border-width: 3px;
+  background-color: white;
+  border-style: none;
+  border-radius: 50px;
 }
 
 .panneau-service:hover {
-  color: white;
+  color: black;
   border-style: none;
+  transform: translateY(-30px);
+  transition: .5s;
 }
 
 .panneau-service a {
@@ -496,30 +492,32 @@ nav > ul li:hover .sousmenu {
   text-decoration: none;
 }
 
-#panneau-web:hover{
-  background: rgb(0, 165, 146);
-}
-
-#panneau-graphique:hover{
-  background: rgb(245, 176, 0);
-}
-
-#panneau-community:hover{
-  background: rgb(252, 236, 180);
-}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+.img-pannel{
+  width: 80px;
+  height: 80px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
 .title-pannel{
+  font-size: 80%;
   display: flex;
   height: 50%;
   text-align: center;
   justify-content: center;
   padding-bottom: 10%;
   margin-top: 20px;
+}
+
+.title-pannel h3 {
+  font-size: 1.5vw;
+  font-weight: bold;
 }
 
 .text-pannel{
@@ -534,9 +532,10 @@ a {
 .logo-pannel{
   display: flex;
   height: 50%;
-  justify-content: center;
+  justify-content: right;
   align-items: end;
   padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 #fleche-pannel{
@@ -666,11 +665,17 @@ a {
   transition: 1.5s cubic-bezier(.5, .7, .5, .8);
 }
 
-.togglecontent {
-  transform: translateX(0);
-  transition: 5s;
+.menueffet {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: .3s;
 }
 
+.texteeffet {
+  opacity: 1;
+  transform: translatex(10px);
+  transition: .3s;
+}
 
 /* ----MEDIA QUERIES---- */
 
@@ -817,6 +822,10 @@ a {
 
   .bouton-contact {
     margin-bottom: 10%;
+  }
+
+  .imgnav {
+    top: .5%;
   }
 
   #header {

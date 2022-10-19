@@ -78,6 +78,7 @@
     <div class="flex-container">
       <a href="developpement-web.html">
         <div id="panneau-web" class="panneau-service">
+          <img class="img-pannel" src="ASSETS2/iconmonstr-computer-12-240.png" alt="logo developpement web">
           <div class="title-pannel">
             <h3> DÉVELOPPEMENT WEB</h3>
           </div>
@@ -92,6 +93,7 @@
       </a>
       <a href=creation-graphique.html>
         <div id="panneau-graphique" class="panneau-service">
+          <img class="img-pannel" src="ASSETS2/iconmonstr-pencil-8-240.png" alt="logo creation graphique">
           <div class="title-pannel">
             <h3> CRÉATION GRAPHIQUE</h3>
           </div>
@@ -106,8 +108,9 @@
       </a>
       <a href="community-manager.html">
         <div id="panneau-community" class="panneau-service">
+          <img class="img-pannel" src="ASSETS2/iconmonstr-slack-6-240.png" alt="logo community management">
           <div class="title-pannel">
-            <h3 > COMMUNITY MANAGEMENT</h3>
+            <h3 > COMMUNITY MANAGER</h3>
           </div>
           <div class="text-pannel">
             <p> Une communauté à votre image !<br>
