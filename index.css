@@ -146,6 +146,9 @@ img {
   z-index: 10;
 }
 
+#text-header p{
+  font-size: 1.8vw;
+}
 
 /* ---BOUTON CONTACT---*/
 
@@ -490,17 +493,13 @@ li a:hover:after {
   background-color: white;
   border-style: none;
   border-radius: 50px;
-}
-
-#panneau-graphique {
-  margin-top: 50px;
+  transition: transform .5s;
 }
 
 .panneau-service:hover {
   color: black;
   border-style: none;
   transform: translateY(-30px);
-  transition: .5s;
 }
 
 .panneau-service a {
@@ -584,6 +583,14 @@ a {
   align-items: center;
   margin: auto;
   flex: 1 1 0px;
+}
+
+.texte-mission-1 p{
+  font-size: 1.8vw;
+}
+
+.texte-mission-2 p{
+  font-size: 1.5vw;
 }
 
 #fleche{

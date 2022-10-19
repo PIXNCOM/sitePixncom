@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Pix'n com</title>
+  <title>Pix'n com - Agence Web - Eco Conception - Clermont Ferrand</title>
   <meta charset="utf-8" />
   <meta name="viewport">
   <meta name="description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis."/>
-  <meta name="keyword" content="Création de sites, Votre site internet, Référencement, cms, Wordpress, Création de site internet, E-commerce, Responsive, Sites internet, Site vitrin, Référencement naturel, Prestashop, Création graphique, Identité visuelle, Designer, Supports de communication, Outils de communication, Webdesigner, Agence web, Webmarketing, Refonte, Stratégie de communication, Réseaux sociaux,"/>
   <link rel="icon" href="Assets/FLECHE-SEULE.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
@@ -63,7 +62,7 @@
     <div class="header-droite">
       <div id="text-header">
         <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
-        <h3>Développement Web - Création Graphique - Community Management </h3>
+        <p>Développement Web - Création Graphique - Community Management </p>
       </div>
     </div>
 
@@ -74,7 +73,7 @@
     </a>
   </div>
   <div id="services">
-    <h2 class="titres reveal"> <b> NOS SERVICES</b></h2>
+    <h2 class="titres reveal"> <b>NOS SERVICES</b></h2>
     <div class="flex-container">
       <a href="developpement-web.html">
         <div id="panneau-web" class="panneau-service">
@@ -91,7 +90,7 @@
           </div>
         </div>
       </a>
-      <a href=creation-graphique.html>
+      <a href=creation-graphique.html style="transform: translateY(40px)">
         <div id="panneau-graphique" class="panneau-service">
           <img class="img-pannel" src="ASSETS2/iconmonstr-pencil-8-240.png" alt="logo creation graphique">
           <div class="title-pannel">
@@ -130,12 +129,18 @@
         <img alt="Une ampoule avec le logo simplifie de l'entreprise Pix'ncom" src="Assets/ampouleV2.png">
       </div>
       <div class="texte-mission">
-        <h3>Entreprise, association, collectivités,<br> créons ensemble votre identité de marque !<br>Impacts positifs garantis.</h3><br>
-        <h4>L’Agence engagée de Clermont-Ferrand, au cœur du Puy-de-Dôme:</h4>
-        <p>L’accueil personnalisé pour des projets qui vous ressemblent. <br></p>
-        <p>La touche créative d’une équipe aux compétences multiples.<br></p>
-        <p>L’acteur de l’ESS qui dynamise votre territoire et contribue à votre politique de Responsabilité Sociétale des Entreprises.<br></p>
-        <p>La sensibilité environnementale des sites éco-conçus pour une transition écologique optimisée.</p>
+        <div class="texte-mission-1">
+          <p>Entreprise, association, collectivités,<br> créons ensemble votre identité de marque !<br>Impacts positifs garantis.</p>
+        </div>
+        <div class="texte-mission-2">
+          <p>L’Agence engagée de Clermont-Ferrand, au cœur du Puy-de-Dôme:</p>
+        </div>
+        <div class="texte-mission-4">
+          <p>L’accueil personnalisé pour des projets qui vous ressemblent. <br></p>
+          <p>La touche créative d’une équipe aux compétences multiples.<br></p>
+          <p>L’acteur de l’ESS qui dynamise votre territoire et contribue à votre politique de Responsabilité Sociétale des Entreprises.<br></p>
+          <p>La sensibilité environnementale des sites éco-conçus pour une transition écologique optimisée.</p>
+        </div>
       </div>
     </div>
   </div>
