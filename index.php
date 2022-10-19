@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" xmlns:og="http://ogp.me/ns#">
 <head>
   <title>Pix'n com - Agence Web - Eco Conception - Clermont Ferrand</title>
+  <meta property="og:title" content="Pix'n Com - Agence Web - Clermont Ferrand"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis."/>
+  <meta property="og:url" content="http://pixncom.com/index.php"/>
+  <meta property="og:image" content="http://pixncom.com/LOGO-RVB.png"/>
   <meta charset="utf-8" />
-  <meta name="viewport">
-  <meta name="description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis."/>
+  <meta name="viewport" />
+  <meta name="description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis." />
   <link rel="icon" href="Assets/FLECHE-SEULE.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
