@@ -218,7 +218,7 @@ nav ul {
 
 nav ul li {
   float: left;
-  margin : 10px;
+  margin : 10px 20px;
 }
 
 nav ul::after {
