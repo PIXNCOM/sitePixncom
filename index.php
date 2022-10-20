@@ -34,9 +34,9 @@
         <li id="hovermenu" class="menu-deroulant">SERVICES
           <div class="ssmenu togglebox">
             <ul class="sousmenu">
-              <li class="toglecontent"><a href="developpement-web.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-computer-12-240.png" alt="logo developpement web">DÉVELOPPEMENT WEB</a></li>
-              <li class="toglecontent"><a href="creation-graphique.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-pencil-8-240.png" alt="logo creation graphique">CRÉATION GRAPHIQUE</a></li>
-              <li class="toglecontent"><a href="community-manager.html"><img class="logos-sousmenu" src="ASSETS2/iconmonstr-slack-6-240.png" alt="logo community management">COMMUNITY MANAGER</a></li>
+              <li class="toglecontent"><a href="developpement-web.html"><img class="logos-sousmenu" src="Assets/logoweb.png" alt="logo developpement web">DÉVELOPPEMENT WEB</a></li>
+              <li class="toglecontent"><a href="creation-graphique.html"><img class="logos-sousmenu" src="Assets/logographique.png" alt="logo creation graphique">CRÉATION GRAPHIQUE</a></li>
+              <li class="toglecontent"><a href="community-manager.html"><img class="logos-sousmenu" src="Assets/logocommunity.png" alt="logo community management">COMMUNITY MANAGER</a></li>
             </ul>
           </div>
         </li>
@@ -47,20 +47,20 @@
   </div>
   <div id="header">
     <div class="imgheaderdroite">
-      <img src="IMG/IMG_HEADER.jpg" alt="">
+      <img src="Assets/Headers/IMG_HEADER.jpg" alt="">
     </div>
     <div id=header-left class="slide">
       <div class="fondblancheader">
-        <img src="TRUC-BLANC/Plan de Travail 1.png">
+        <img src="Assets/blanc.png">
       </div>
       <div class="resteheader">
         <div id="nav-logos">
           <div id="logors">
             <a href="https://fr.linkedin.com/company/pix-n-com/">
-              <img alt="Logo linkedin noir" class="rs" src="Assets/iconmonstr-linkedin-1-240.png">
+              <img alt="Logo linkedin noir" class="rs" src="Assets/linkedin.png">
             </a>
             <a href="https://www.instagram.com/agence_pix_n_com/">
-              <img alt="Logo instagram noir" class="rs" src="Assets/iconmonstr-instagram-11-240.png">
+              <img alt="Logo instagram noir" class="rs" src="Assets/instagram.png">
             </a>
           </div>
           <div id="logopixncom">
@@ -90,7 +90,7 @@
     <div class="flex-container">
       <a href="developpement-web.html">
         <div id="panneau-web" class="panneau-service">
-          <img class="img-pannel" src="ASSETS2/iconmonstr-computer-12-240.png" alt="logo developpement web">
+          <img class="img-pannel" src="Assets/logoweb.png" alt="logo developpement web">
           <div class="title-pannel">
             <h3> DÉVELOPPEMENT WEB</h3>
           </div>
@@ -105,7 +105,7 @@
       </a>
       <a href=creation-graphique.html style="transform: translateY(40px)">
         <div id="panneau-graphique" class="panneau-service">
-          <img class="img-pannel" src="ASSETS2/iconmonstr-pencil-8-240.png" alt="logo creation graphique">
+          <img class="img-pannel" src="Assets/logographique.png" alt="logo creation graphique">
           <div class="title-pannel">
             <h3> CRÉATION GRAPHIQUE</h3>
           </div>
@@ -120,7 +120,7 @@
       </a>
       <a href="community-manager.html">
         <div id="panneau-community" class="panneau-service">
-          <img class="img-pannel" src="ASSETS2/iconmonstr-slack-6-240.png" alt="logo community management">
+          <img class="img-pannel" src="Assets/logocommunity.png" alt="logo community management">
           <div class="title-pannel">
             <h3 > COMMUNITY MANAGER</h3>
           </div>
