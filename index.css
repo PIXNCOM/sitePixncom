@@ -913,8 +913,9 @@ a {
   }
 
   #nav-logos {
-    gap: 40px;
-    padding-right: 40px;
+    gap: 20px;
+    padding-right: 20px;
+    align-items: center;
   }
 
   #logors {
@@ -1014,7 +1015,7 @@ a {
 
   a.button {
     width : auto;
-    padding : 5px 20px;
+    padding : 4px 20px;
   }
 
   .flex-container {
