@@ -112,8 +112,8 @@ img {
 }
 
 .rs {
-  min-width: 30px;
-  height: 30px;
+  width: 30px;
+  height: auto;
 }
 
 #logo{
@@ -488,7 +488,7 @@ li a:hover:after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 40vh;
+  height: auto;
   text-decoration: none;
   background-color: white;
   border-style: none;
@@ -521,7 +521,6 @@ a {
 }
 
 .title-pannel{
-  font-size: 80%;
   display: flex;
   height: 50%;
   text-align: center;
@@ -864,39 +863,57 @@ a {
     margin: 5% 0;
   }
 
-  .bouton-contact {
-    margin-bottom: 10%;
-  }
-
   .imgnav {
+    width: 60px;
     top: .5%;
   }
 
-  #header {
-    height: 30vh;
-    background-size: 100vw auto;
+  #header-left {
+    width: 60%;
   }
 
-  #text-header {
+  .resteheader {
+    right: 20%;
   }
 
-  #header-developpement {
-    height: 30vh;
-    background-size: 100vw 30vh;
+  #nav-headers {
+    gap: 10px;
   }
 
-  #header-graphique {
-    height: 30vh;
-    background-size: 100vw auto;
+  #nav-logos {
+    gap: 40px;
+    padding-right: 40px;
   }
 
-  #header-community {
-    height: 30vh;
-    background-size: 100vw auto;
+  #logors {
+    gap: 10px;
+  }
+
+  .rs {
+    width: 15px;
+    height: 15px;
+  }
+
+  #text-header-annexes {
+    align-items: center;
+    width: 80%;
+  }
+
+  #text-header-annexes h1{
+    font-size: 4.2vw;
+  }
+
+  .bouton-contact {
+    margin-left: 8%;
+    margin-bottom: 10%;
   }
 
   nav {
-    font-size: 120%;
+    font-size: 110%;
+  }
+
+  nav ul li {
+    margin: 10px;
   }
 
   .sousmenu {
@@ -907,8 +924,38 @@ a {
     margin: 5px 0;
   }
 
+  #services {
+    margin-bottom: 50px;
+  }
+
+  .title-pannel h3 {
+    font-size: 2.6vw;
+  }
+
+  .img-pannel {
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .logo-pannel {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .panneau-service {
+    border-radius: 30px;
+  }
+
   #nos-realisation {
     height: 60vh;
+  }
+
+  .logos-prestations {
+    width: 70px;
+    height: 70px;
+    margin: 40px;
   }
 
   .texte-prestations {
@@ -926,25 +973,25 @@ a {
   }
 
   .flex-container {
-    height: 27vh;
     grid-gap: 5%;
     padding: 5%;
   }
 
-  .panneau-service {
-    height: 22vh;
-    justify-content: space-between;
-  }
 
   #flex-mission {
     padding: 2%;
   }
 
   #div-contact {
-    height: 580px;
+    flex-direction: column;
+    height: auto;
     width: auto;
-    margin: 3%;
-    justify-content: space-around;
+    margin: 3% 15%;
+  }
+
+  #contactbox {
+    flex-direction: column;
+    height: auto;
   }
 
   .maps {
@@ -958,7 +1005,7 @@ a {
   }
 
   #formulaire-contact{
-    min-width: 300px;
+    min-width: 280px;
     height: auto;
     padding-right: 0px;
   }
