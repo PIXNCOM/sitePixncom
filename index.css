@@ -403,12 +403,10 @@ li a:hover:after {
 
 .counter{
   display: flex;
-border: solid;
+  border: solid;
   border-radius: 30px;
   background-color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
+  margin: 10% 5%;
 }
 
 
@@ -942,7 +940,8 @@ a {
   }
 
   nav ul li {
-    margin: 10px;
+    margin: 6px;
+    font-size: 80%;
   }
 
   .sousmenu {
@@ -962,10 +961,10 @@ a {
   }
 
   .img-pannel {
-    width: 14vw;
+    width: 10vw;
     height: auto;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
   }
 
   .logo-pannel {
@@ -975,6 +974,10 @@ a {
 
   .panneau-service {
     border-radius: 20px;
+  }
+
+  .counter {
+    margin: 5%;
   }
 
   #nos-realisation {
@@ -1039,5 +1042,11 @@ a {
     width: auto;
     height: auto;
     margin: 10px 5px;
+  }
+
+  .container-contact {
+    margin-top: 5%;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
