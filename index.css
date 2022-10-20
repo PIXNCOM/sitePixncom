@@ -891,8 +891,9 @@ a {
   }
 
   .imgnav {
-    width: 60px;
-    top: .5%;
+    width: 40px;
+    top: .2%;
+    left: .5%;
   }
 
   #header-left {
@@ -1024,6 +1025,7 @@ a {
   #contactbox {
     flex-direction: column;
     height: auto;
+    width: 90%;
     padding-right: 0px;
     padding: 0%;
   }
