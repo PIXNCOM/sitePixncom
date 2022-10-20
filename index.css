@@ -962,7 +962,7 @@ a {
   }
 
   .img-pannel {
-    width: 7vw;
+    width: 20vw;
     height: auto;
     padding-left: 20px;
     padding-top: 20px;
@@ -974,7 +974,7 @@ a {
   }
 
   .panneau-service {
-    border-radius: 30px;
+    border-radius: 20px;
   }
 
   #nos-realisation {
@@ -1039,6 +1039,5 @@ a {
     width: auto;
     height: auto;
     margin: 10px 5px;
-    padding-right: 0px;
   }
 }
