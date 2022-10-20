@@ -373,7 +373,8 @@ li a:hover:after {
   margin-left: -10%;
   padding-right: 2%;
 }
-.form-control{margin: 10px;
+.form-control{
+  margin: 10px;
   border: 1px solid black;
   margin-block-start: auto;
   align-items: right;
@@ -396,6 +397,35 @@ li a:hover:after {
 .lienRGPD{
   text-decoration: underline;
   font-size: 80%;
+}
+
+/*---compteur js---*/
+
+.counter{
+  display: flex;
+border: solid;
+  border-radius: 30px;
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+.box{
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+.box i{
+  font-size: 40px;
+  color: #333;
 }
 
 /* ---POPUP ENVOI FORMULAIRE--- */

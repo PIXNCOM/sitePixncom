@@ -135,6 +135,24 @@
       </a>
     </div>
   </div>
+  <div class="counter">
+      <div class="box">
+          <img src="Assets/balise-html.png">
+          <i class="fas fa-user-graduate"></i>
+          <div id="num1">
+              <p>0</p>
+          </div>
+          <p>ligne de code</p>
+      </div>
+      <div class="box">
+          <img src="Assets/tasse-a-cafe.png">
+          <i class="fas fa-user-graduate"></i>
+          <div id="num2">
+              <p>0</p>
+          </div>
+              <p>café consommés</p>
+      </div>
+  </div>
   <div id="missions">
     <h2 class="titres reveal"><b> PIX'N COM : DIGITALE, SOLIDAIRE, RESPONSABLE !</b></h2>
     <div id="flex-mission">
@@ -287,6 +305,9 @@
     </div>
   </div>
   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <footer>

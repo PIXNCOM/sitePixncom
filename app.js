@@ -50,6 +50,36 @@ $hovermenu.onmouseleave = () => {
   $textmenus.classList.remove('texteeffet')
 }
 
+/*$(document).ready(function (){
+    $('.num').counter({
+        time: 1200
+    });
+});*/
+var c = 1836;
+var t = 500;
+var cpt = 0;
+var duree = 1.
+var delta = Math.ceil((duree * 1000) / c);
+var alfa = Math.ceil((duree * 1000) / t);
+var node = document.getElementById("num1");
+var node2 = document.getElementById("num2");
+
+function countdown() {
+    node.innerHTML = ++cpt;
+    if ( cpt < c ){
+        setTimeout(countdown, delta);
+    }
+}
+    setTimeout(countdown, delta);
+
+function countdown2(){
+    node2.innerHTML = ++cpt;
+    if ( cpt < t ){
+        setTimeout(countdown2, alfa);
+    }
+}
+    setTimeout(countdown2, alfa);
+
 jQuery(function(){
     $(function () {
         $(window).scroll(function () { //Fonction appelée quand on descend la page
@@ -61,3 +91,5 @@ jQuery(function(){
         });
     });
 });
+
+
