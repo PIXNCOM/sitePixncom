@@ -11,5 +11,4 @@
       - /bin/cp app.js $DEPLOYPATH
       - /bin/cp -R Assets $DEPLOYPATH
       - /bin/cp -R PHPMailer $DEPLOYPATH
-      - /bin/cp .htaccess $DEPLOYPATH
       - /bin/cp sitemap.xml $DEPLOYPATH
