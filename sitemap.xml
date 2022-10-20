@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://www.pixncom.com/index.php</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://www.pixncom.com/developpement-web.html</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.pixncom.com/creation-graphique.html</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.pixncom.com/dcommunity-manager.html</loc>
-      <lastmod>2022-10-13</lastmod>
+      <lastmod>2022-10-20</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.5</priority>
     </url>
     <url>
     <loc>http://www.pixncom.com/contact.html</loc>
-    <lastmod>2022-10-13</lastmod>
+    <lastmod>2022-10-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
