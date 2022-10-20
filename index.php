@@ -32,13 +32,13 @@
       <ul id="flex-menus">
         <li><a href="index.php">ACCUEIL</a></li>
         <li id="hovermenu" class="menu-deroulant">SERVICES
-          <div class="ssmenu togglebox">
+          <!--<div class="ssmenu togglebox">
             <ul class="sousmenu">
               <li class="toglecontent"><a href="developpement-web.html"><img class="logos-sousmenu" src="Assets/logoweb.png" alt="logo developpement web">DÉVELOPPEMENT WEB</a></li>
               <li class="toglecontent"><a href="creation-graphique.html"><img class="logos-sousmenu" src="Assets/logographique.png" alt="logo creation graphique">CRÉATION GRAPHIQUE</a></li>
               <li class="toglecontent"><a href="community-manager.html"><img class="logos-sousmenu" src="Assets/logocommunity.png" alt="logo community management">COMMUNITY MANAGER</a></li>
             </ul>
-          </div>
+          </div>-->
         </li>
         <li><a href="#nous-choisir">VOTRE PROJET</a></li>
         <li><a href="contact.html">CONTACT</a></li>
