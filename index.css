@@ -812,7 +812,6 @@ a {
   }
 
   #formulaire-contact{
-    min-width: 300px;
     height: auto;
     padding-right: 0px;
 
@@ -909,7 +908,7 @@ a {
   }
 
   nav {
-    font-size: 110%;
+    font-size: 80%;
   }
 
   nav ul li {
@@ -992,6 +991,8 @@ a {
   #contactbox {
     flex-direction: column;
     height: auto;
+    padding-right: 0px;
+    padding: 0%;
   }
 
   .maps {
@@ -1000,13 +1001,14 @@ a {
 
   .contact-texte {
     width: 300px;
-    margin-left: -30px;
+    margin-left: 0;
     margin-bottom: 10px;
   }
 
   #formulaire-contact{
-    min-width: 280px;
+    width: auto;
     height: auto;
+    margin: 10px 5px;
     padding-right: 0px;
   }
 }
