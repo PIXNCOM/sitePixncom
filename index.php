@@ -136,7 +136,7 @@
     </div>
   </div>
   <div class="counter">
-      <div class="box">
+      <div class="box reveal">
           <img src="Assets/balise-html.png">
           <i class="fas fa-user-graduate"></i>
           <div id="num1">
@@ -144,7 +144,7 @@
           </div>
           <p>ligne de code</p>
       </div>
-      <div class="box">
+      <div class="box reveal">
           <img src="Assets/tasse-a-cafe.png">
           <i class="fas fa-user-graduate"></i>
           <div id="num2">
