@@ -2,7 +2,7 @@
 <html lang="fr" xmlns:og="http://ogp.me/ns#">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="description" content="Entreprise, association, collectivités, créons ensemble votre identité de marque!Impacts positifs garantis." />
 
 
@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Pix'n Com - Agence Web - Clermont Ferrand">
   <meta name="twitter:description" content="Entreprise, association, collectivités,créons ensemble votre identité de marque!Impacts positifs garantis.">
-  <meta name="twitter:url" content="http://pixncom.com/"> 
+  <meta name="twitter:url" content="http://pixncom.com/">
 
   <title>Pix'n com - Agence Web - Eco Conception - Clermont Ferrand</title>
   <link rel="icon" href="Assets/FLECHE-SEULE.png">
