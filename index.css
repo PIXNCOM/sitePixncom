@@ -112,7 +112,7 @@ img {
 }
 
 .rs {
-  width: 30px;
+  min-width: 30px;
   height: 30px;
 }
 
@@ -605,7 +605,7 @@ a {
 #nav-headers {
   display: flex;
   justify-content: flex-start;
-  gap: 100px;
+  gap: 80px;
 }
 
 #header-developpement {
@@ -633,13 +633,23 @@ a {
 }
 
 .nos-prestations{
-  margin-top: 5%;
+  width: auto;
+  height: 500px;
+  background-color: white;
+  border-radius: 40px;
+  margin: 5%;
 }
 
-.texte-prestations{
-  margin-top: 2%;
-  margin-left: 45%;
+.nos-prestations p{
+  margin-left: 15px;
 }
+
+.logos-prestations {
+  width: 100px;
+  height: 100px;
+  margin: 60px;
+}
+
 
 #nos-realisation{
   display: flex;
