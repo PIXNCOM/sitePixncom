@@ -88,7 +88,7 @@
   <div id="services">
     <h2 class="titres reveal"> <b>NOS SERVICES</b></h2>
     <div class="flex-container">
-      <a href="developpement-web.html">
+      <a href="#">
         <div id="panneau-web" class="panneau-service">
           <img class="img-pannel" src="Assets/logoweb.png" alt="logo developpement web">
           <div class="title-pannel">
@@ -103,7 +103,7 @@
           </div>
         </div>
       </a>
-      <a href=creation-graphique.html style="transform: translateY(40px)">
+      <a href="#" style="transform: translateY(40px)">
         <div id="panneau-graphique" class="panneau-service">
           <img class="img-pannel" src="Assets/logographique.png" alt="logo creation graphique">
           <div class="title-pannel">
@@ -118,7 +118,7 @@
           </div>
         </div>
       </a>
-      <a href="community-manager.html">
+      <a href="#">
         <div id="panneau-community" class="panneau-service">
           <img class="img-pannel" src="Assets/logocommunity.png" alt="logo community management">
           <div class="title-pannel">

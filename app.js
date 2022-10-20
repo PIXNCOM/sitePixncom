@@ -53,6 +53,7 @@ const handleIntersect2 = function (entries, observer) {
                 }
             }
             setTimeout(countdown2, alfa);
+            observer.unobserve(entry.target);
         }
     });
 
@@ -117,5 +118,3 @@ jQuery(function(){
         });
     });
 });
-
-
