@@ -886,6 +886,10 @@ a {
     font-weight: bold;
   }
 
+  .slide {
+    transform: translateX(0);
+  }
+
   .titres {
     margin: 5% 0;
   }
@@ -897,7 +901,7 @@ a {
   }
 
   #header-left {
-    width: 80%;
+    width: 60%;
   }
 
   .resteheader {
@@ -924,7 +928,7 @@ a {
 
   #text-header-annexes {
     align-items: center;
-    width: 80%;
+    width: 60%;
   }
 
   #text-header-annexes h1{
@@ -979,6 +983,14 @@ a {
 
   .counter {
     margin: 5%;
+  }
+
+  .texte-mission-1 p{
+    font-size: 3vw;
+  }
+
+  .texte-mission-2 p{
+    font-size: 2.6vw;
   }
 
   #nos-realisation {
