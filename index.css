@@ -2,6 +2,10 @@
   font-family: 'TSTAR';
   src: url('Assets/TYPO/TSTAR-Regular.otf') format('opentype')
 }
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
 body {
   font-family: 'TSTAR', sans-serif;
@@ -867,8 +871,9 @@ a {
 }
 
 @media (orientation: portrait) {
-  html {
-    overflow-y: hidden;
+
+  ::webkit-scrollbar {
+    -webkit-apperance: none;
   }
 
   h1 {
