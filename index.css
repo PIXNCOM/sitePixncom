@@ -925,6 +925,14 @@ a {
     transform: translateX(0);
   }
 
+  .menueffet {
+    transform: translateY(-5px);
+  }
+
+  .texteeffet {
+    transform: translateY(-5px);
+  }
+
   .resteheader {
     position: unset;
     display: flex;
@@ -1001,7 +1009,7 @@ a {
   .ssmenu {
     width: 150px;
     height: 80px;
-    top: 4vh;
+    top: 4.5vh;
   }
 
   .sousmenu {
@@ -1009,7 +1017,11 @@ a {
   }
 
   .sousmenu li {
-    margin: 5px 0;
+    margin: 5px 0 9px 0;
+  }
+
+  .sousmenu li:hover {
+    transform: translateX(10px);
   }
 
   #services {
