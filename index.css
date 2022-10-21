@@ -618,6 +618,7 @@ a {
   width: 50%;
   height: auto;
   flex: 1 1 0;
+  margin: auto;
 }
 
 .texte-mission{
@@ -877,7 +878,7 @@ a {
   }
 }
 
-@media (orientation: portrait) {
+@media screen and (max-width: 1199px) {
 
   h1 {
     font-size: 5vw;
