@@ -868,9 +868,9 @@ a {
 
 @media (orientation: portrait) {
   html {
-    overflow-y: scroll;
+    overflow-y: hidden;
   }
-  
+
   h1 {
     font-size: 5vw;
   }
