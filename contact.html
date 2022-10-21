@@ -26,7 +26,7 @@
 <body style=background-color:rgb(237,240,242)>
   <div class="navbar">
     <div class="imgnav">
-      <a href="#top"><img alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
+      <a href="#"><img alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png"></a>
     </div>
     <nav>
       <ul id="flex-menus">
@@ -47,10 +47,10 @@
   <div class="container-contact">
     <div class="flex-container" id="contactbox">
       <div class="contact-texte">
-        <h3 class="titres"><center>
+        <h3 class="titres"><div style="text-align: center;">
           Nous Contacter
-        </center></h3>
-        <p> <img alt="logo pointeur de position" class="pointer"src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p>
+        </div></h3>
+        <p> <img alt="logo pointeur de position" class="pointer" src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p>
         <p> <img alt="logo arobase adresse mail" class="icon-mail" src="Assets/arroba.png">alissa.geslin@pixncom.com </p>
         <p><img alt="logo d'un telephone" class="icon-tel" src="Assets/telephone.png"> 07 66 54 51 72 </p>
         <h4 class="horaires">HORAIRES</h4>
@@ -59,16 +59,16 @@
       <div id="formulaire-contact" class="contactform">
         <div class="formulaire">
           <p class="desQuestion"> <img id="flecheSeule" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">Des questions, un projet ?<br> prenons un café et parlons-en.</p>
-          <form action="index.php"method="post">
-            <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
+          <form action="index.php" method="post">
+            <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)" id="nom" placeholder="Nom *">
             <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
             <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
 
-            <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
+            <textarea name="message" class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
             <p class="desQuestion"> * champ obligatoire</p>
             <div>
-              <input type="checkbox" id="rgdp" name="rgpd" required >
-              <label for="rgpg">j'accepte les conditions rgpd<br>  <a href="#" class="lienRGPD">lire les conditions rgpd </a></label>
+              <input type="checkbox" id="rgpd" name="rgpd" required >
+              <label for="rgpd">j'accepte les conditions rgpd<br>  <a href="#" class="lienRGPD">lire les conditions rgpd </a></label>
             </div>
             <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
           </form>

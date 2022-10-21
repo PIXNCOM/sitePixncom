@@ -26,7 +26,7 @@
 <body style=background-color:rgb(237,240,242)>
   <div class="navbar">
     <div class="imgnav">
-      <a href="#top"><img alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
+      <a href="#"><img alt="Logo complet de l'entreprise Pix'ncom" src="Assets/LOGO-RVB.png">
     </div>
     <nav>
       <ul id="flex-menus">
@@ -51,7 +51,7 @@
     </div>
     <div id=header-acceuil class="slide">
       <div class="fondblancheader">
-        <img src="Assets/blanc.png">
+        <img src="Assets/blanc.png" alt="Fond blanc">
       </div>
       <div class="resteheader">
         <div id="nav-logos">
@@ -84,7 +84,7 @@
     </div>
   </div>
   <div id="scrollUp">
-    <a href="#top"><img alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"/>
+    <a href="#"><img alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"/>
       <div style="position:absolute;top:35%;left:12%;">Haut de page</div>
     </a>
   </div>
@@ -102,7 +102,7 @@
             </p>
           </div>
           <div class="logo-pannel">
-            <img id="fleche-pannel" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"></p>
+            <img id="fleche-pannel" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">
           </div>
         </div>
       </a>
@@ -117,7 +117,7 @@
             </p>
           </div>
           <div class="logo-pannel">
-            <img id="fleche-pannel" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"></p>
+            <img id="fleche-pannel" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">
           </div>
         </div>
       </a>
@@ -132,7 +132,7 @@
             </p>
           </div>
           <div class="logo-pannel">
-            <img id="fleche-pannel" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png"></p>
+            <img id="fleche-pannel" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">
           </div>
         </div>
       </a>
@@ -188,7 +188,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.1612223690177!2d3.1288323161000506!3d45.767959121142916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71c38c2ad19ad%3A0xa6d4f21fdb1240ef!2s37%20Rue%20Joseph%20Desaymard%2C%2063000%20Clermont-Ferrand!5e0!3m2!1sfr!2sfr!4v1664969320032!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="contact-texte">
-      <p> <img alt="logo pointeur de position" class="pointer"src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p>
+      <p> <img alt="logo pointeur de position" class="pointer" src="Assets/location-pointer.png">37 rue Joseph Desaymard     63000 Clermont-Ferrand</p>
       <p> <img alt="logo arobase adresse mail" class="icon-mail" src="Assets/arroba.png">alissa.geslin@pixncom.com </p>
       <p><img alt="logo d'un telephone" class="icon-tel" src="Assets/telephone.png"> 07 66 54 51 72 </p>
       <h4 class="horaires">HORAIRES</h4>
@@ -197,12 +197,12 @@
     <div id="formulaire-contact">
       <div class="formulaire">
         <p class="desQuestion"> <img id="flecheSeule" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">Des question, un projet ?<br> prenons un café et parlons-en.</p>
-        <form action="index.php"method="post">
-          <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)"id="nom" placeholder="Nom *">
+        <form action="index.php" method="post">
+          <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)" id="nom" placeholder="Nom *">
           <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
           <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
 
-          <textarea name="message"class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
+          <textarea name="message" class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
           <p class="desQuestion"> * champ obligatoire</p>
           <div>
             <input type="checkbox" id="rgpd" name="rgpd" required >
@@ -214,7 +214,7 @@
           <div class="popup">
             <a class="close" href="#">&times;</a>
             <div class="content">
-              <center>Merci de nous avoir contacté !</center>
+              <div style="text-align: center;">Merci de nous avoir contacté !</div>
             </div>
           </div>
         </div>
@@ -272,7 +272,7 @@
               $Body .= $message;
               $Body .= "\r\n";
 
-              $mail->isHTML(true); //Met le mail au format HTML
+              $mail->isHTML(); //Met le mail au format HTML
               $mail->Subject = "formulaire pixncom"; // On parametre l'objet
               $mail->Body = nl2br($Body); // Le message pour les boites html
               $mail->AltBody = $Body; //Le message pour les boites non html
@@ -284,7 +284,7 @@
                 <div class="popup">
                 <a class="close" href="index.php">&times;</a>
                 <div class="content">
-                <center>Merci de nous avoir contacté !</center>
+                <div style="text-align: center;">Merci de nous avoir contacté !</div>
                 </div>
                 </div>
                 </div>';
@@ -293,7 +293,7 @@
                 <div class="popup">
                 <a class="close" href="index.php">&times;</a>
                 <div class="content">
-                <center>Un problème est survenu !</center>
+                <div style="text-align: center;">Un problème est survenu !</div>
                 </div>
                 </div>
                 </div>';
