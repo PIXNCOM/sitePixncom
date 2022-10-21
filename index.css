@@ -86,6 +86,15 @@ img {
   gap: 100px;
 }
 
+#header-acceuil {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 40%;
+  gap: 100px;
+}
+
 #logopixncom{
   display: flex;
   justify-content: center;
@@ -164,12 +173,15 @@ img {
   margin-top: 15%;
 }
 
+.bouton-header {
+  display: none;
+}
+
 a.button {
   height: auto;
   width: auto;
   color : white;
-  padding : 10px 80px;
-  padding-top: 1.1vh;
+  padding: 1.1vh 80px 10px;
   background: rgb(0, 165, 146);
   border-style: none;
   border-width: 1px;
@@ -255,8 +267,7 @@ li a:hover:after {
 .sousmenu li {
   float: none;
   width: auto;
-  margin: 28px 0;
-  margin-left: 15px;
+  margin: 28px 0 28px 15px;
 }
 
 .sousmenu li:hover {
@@ -273,10 +284,8 @@ li a:hover:after {
 .ssmenu {
   position: absolute;
   opacity: 0;
-  border: none;
-  border-width: 1px;
   border-radius: 5px;
-  border-color: black;
+  border: 1px none black;
   background-color: white;
   width: 300px;
   height: 200px;
@@ -289,7 +298,7 @@ li a:hover:after {
 }
 
 .sousmenu a:hover::after{
-  width: 0%;
+  width: 0;
 }
 
 .sousmenu {
@@ -312,8 +321,7 @@ li a:hover:after {
   display: flex;
   align-items: center;
   width: 90%;
-  border: solid;
-  border-color: black;
+  border: solid black;
   margin : 6%;
   padding-left: 7%;
   padding-right: 10px;
@@ -326,8 +334,7 @@ li a:hover:after {
     justify-content: space-around;
   align-items: center;
   width: 60%;
-  border: solid;
-  border-color: black;
+  border: solid black;
   margin : 6%;
   padding-right: 10px;
   box-shadow: 10px 5px 5px rgb(192,192,192);
@@ -377,7 +384,7 @@ li a:hover:after {
   margin: 10px;
   border: 1px solid black;
   margin-block-start: auto;
-  align-items: right;
+  align-items: flex-end;
 }
 #nom{
   color: rgb(0, 165, 146);
@@ -404,11 +411,9 @@ li a:hover:after {
 .counter{
   display: flex;
   border: solid;
-  border-radius: 30px;
-  background-color: white;
-  margin: 10% 5%;
+  background-color: black;
+  margin: 10% 0;
 }
-
 
 .num{
   font-size: 40px;
@@ -418,7 +423,7 @@ li a:hover:after {
   flex: 1;
   text-align: center;
   padding: 20px;
-  color: black;
+  color: white;
   text-transform: uppercase;
 }
 .box i{
@@ -602,14 +607,14 @@ a {
 .img-ampoule{
   width: 50%;
   height: auto;
-  flex: 1 1 0px;
+  flex: 1 1 0;
 }
 
 .texte-mission{
   justify-content: center;
   align-items: center;
   margin: auto;
-  flex: 1 1 0px;
+  flex: 1 1 0;
 }
 
 .texte-mission-1 p{
@@ -785,9 +790,8 @@ a {
     height: 2vh;
     width: 25vw;
     margin-bottom: 0;
-    padding : 0 0;
     font-size: 0.9vh;
-    padding-top: 0.3vh;
+    padding: 0.3vh 0 0;
   }
 
   .panneau-service {
@@ -841,7 +845,7 @@ a {
 
   #formulaire-contact{
     height: auto;
-    padding-right: 0px;
+    padding-right: 0;
 
   }
 
@@ -886,10 +890,6 @@ a {
     font-weight: bold;
   }
 
-  .slide {
-    transform: translateX(0);
-  }
-
   .titres {
     margin: 5% 0;
   }
@@ -900,26 +900,37 @@ a {
     left: .5%;
   }
 
-  #header-left {
-    width: 60%;
+  .fondblancheader {
+    display: none;
   }
 
-  .resteheader {
-    right: 20%;
+  #logors {
+    display: none;
   }
 
   #nav-headers {
     gap: 10px;
   }
 
-  #nav-logos {
-    gap: 20px;
-    padding-right: 20px;
-    align-items: center;
+  #header-left {
+    width: 100%;
+    height: 45vh;
   }
 
-  #logors {
-    gap: 10px;
+  #header-acceuil {
+    display: none;
+  }
+
+  .slide {
+    transform: translateX(0);
+  }
+
+  .resteheader {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 7vh;
   }
 
   .rs {
@@ -927,9 +938,37 @@ a {
     height: 15px;
   }
 
+  .imgheaderdroite {
+    height: 45vh;
+  }
+
+  .imgheaderdroite img{
+    width: 100%;
+  }
+
+  #text-header {
+    height: 55%;
+  }
+
+  #text-header h1 {
+    font-size: 5.5vw;
+  }
+
+  #text-header p {
+    font-size: 2.5vw;
+  }
+
+  .header-droite {
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
   #text-header-annexes {
-    align-items: center;
-    width: 60%;
+    justify-content: center;
   }
 
   #text-header-annexes h1{
@@ -941,13 +980,28 @@ a {
     margin-bottom: 10%;
   }
 
+  .bouton-header {
+    display: block;
+  }
+
   nav {
     font-size: 80%;
   }
 
   nav ul li {
-    margin: 6px;
+    margin: 6px 10px;
     font-size: 80%;
+  }
+
+  .logos-sousmenu{
+    width: 15px;
+    height: 15px;
+  }
+
+  .ssmenu {
+    width: 150px;
+    height: 80px;
+    top: 4vh;
   }
 
   .sousmenu {
@@ -982,10 +1036,6 @@ a {
     border-radius: 20px;
   }
 
-  .counter {
-    margin: 5%;
-  }
-
   .texte-mission-1 p{
     font-size: 3vw;
   }
@@ -1015,7 +1065,7 @@ a {
 
   a.button {
     width : auto;
-    padding : 4px 20px;
+    padding : 6px 25px;
   }
 
   .flex-container {
@@ -1039,12 +1089,15 @@ a {
     flex-direction: column;
     height: auto;
     width: 90%;
-    padding-right: 0px;
-    padding: 0%;
+    padding: 0;
   }
 
   .maps {
     display: none;
+  }
+
+  .desQuestion {
+    text-align: center;
   }
 
   .contact-texte {

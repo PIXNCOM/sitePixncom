@@ -49,7 +49,7 @@
     <div class="imgheaderdroite">
       <img src="Assets/Headers/IMG_HEADER.jpg" alt="">
     </div>
-    <div id=header-left class="slide">
+    <div id=header-acceuil class="slide">
       <div class="fondblancheader">
         <img src="Assets/blanc.png">
       </div>
@@ -78,6 +78,9 @@
         <h1><b>L'AGENCE WEB <br>SOLIDAIRE ET RESPONSABLE</b></h1>
         <p>Développement Web - Création Graphique - Community Management </p>
       </div>
+        <div class="bouton-header">
+            <a href="#contact" class="button"> Contactez-nous </a>
+        </div>
     </div>
   </div>
   <div id="scrollUp">
