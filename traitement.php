@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         header('Location: index.php');
     }else{
         // On prépare l'URL
-        $url = "https://www.google.com/recaptcha/api/siteverify?secret=6LcP-K4iAAAAAI-eLBotx1JCBjGgcuUsofZdBtF4&response={$_POST['recaptcha-response']}";
+        $url = "https://www.google.com/recaptcha/api/siteverify?secret=6LcnNK8iAAAAADqPD_lCRIAF7BLQLk5A5FLRLud0&response={$_POST['recaptcha-response']}";
 
         // On vérifie si curl est installé
         if(function_exists('curl_version')){
@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 ){
                     // On nettoie le contenu
                     $nom = strip_tags($_POST['nom']);
-                    $sujet = strip_tags($_POST['telephone']);
+                    $telephone = strip_tags($_POST['telephone']);
                     $email = strip_tags($_POST['email']);
                     $message = htmlspecialchars($_POST['message']);
 

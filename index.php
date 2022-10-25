@@ -204,12 +204,13 @@
 
           <textarea name="message" class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
           <p class="desQuestion"> * champ obligatoire</p>
-          <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
           <div>
             <input type="checkbox" id="rgpd" name="rgpd" required >
             <label for="rgpd">j'accepte les conditions rgpd <br> <a class="lienRGPD" href="#">lire les conditions rgpd </a></label>
           </div>
-          <button type="submit" class="btn btn-primary mb-3" id="btn-envoi">Envoyer</button>
+          <button type="submit" class="btn btn-primary mb-3 g-recaptcha" data-sitekey="6LcnNK8iAAAAABEBopajMSDV7NMRBohJvpDITnB5" 
+        data-callback='onSubmit'
+        data-action='submit' id="btn-envoi">Envoyer</button>
         </form>
         <div id="popup1" class="overlay">
           <div class="popup">
@@ -228,14 +229,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcP-K4iAAAAAI-eLBotx1JCBjGgcuUsofZdBtF4"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script>
-  grecaptcha.enterprise.ready(function() {
-    grecaptcha.enterprise.execute('6LcP-K4iAAAAAI-eLBotx1JCBjGgcuUsofZdBtF4', {action: 'login'}).then(function(token) {
-      document.getElementById('recaptchaResponse').value = token
-    });
-  });
+  function onSubmit(token) {
+    document.getElementById("btn-envoi").submit();
+  }
 </script>
+
 <footer>
     <hr size="1" color="black">
     <div class="flex-container" id="div-footer">
