@@ -197,13 +197,14 @@
     <div id="formulaire-contact">
       <div class="formulaire">
         <p class="desQuestion"> <img id="flecheSeule" alt="Logo simplifié de l'entreprise Pix'ncom" src="Assets/FLECHE-SEULE.png">Des question, un projet ?<br> prenons un café et parlons-en.</p>
-        <form action="index.php" method="post">
+        <form action="traitement.php" method="post">
           <input type="text" name="nom" required class="form-control" style="color:rgb(0, 165, 146)" id="nom" placeholder="Nom *">
           <input type="text" name="telephone" required class="form-control" id="telephone" placeholder="Téléphone *">
           <input type="email" name="email" required class="form-control" id="mail" placeholder="Mail *">
 
           <textarea name="message" class="form-control" id="formulaire" rows="4" placeholder="Votre message"></textarea>
           <p class="desQuestion"> * champ obligatoire</p>
+          <input type="hidden" id="recaptchaResponse" name="recaptcha-response">
           <div>
             <input type="checkbox" id="rgpd" name="rgpd" required >
             <label for="rgpd">j'accepte les conditions rgpd <br> <a class="lienRGPD" href="#">lire les conditions rgpd </a></label>
@@ -218,92 +219,6 @@
             </div>
           </div>
         </div>
-        <?php
-        use PHPMailer\PHPMailer\PHPMailer;
-
-        //Pour utiliser notre objet PHPMailer
-        use PHPMailer\PHPMailer\Exception;
-
-        // Pour utiliser l'objet Exeption
-
-        //require 'vendor/autoload.php'; //L'autoload permet d'eviter de mettre des require partout
-        require 'PHPMailer/src/Exception.php';
-        require 'PHPMailer/src/PHPMailer.php';
-        require 'PHPMailer/src/SMTP.php';
-
-        if(!empty($_POST) && $_SERVER['HTTP_HOST'] == 'localhost'){
-
-
-          $email = htmlspecialchars($_POST['email']);
-          $nom = htmlspecialchars($_POST['nom']);
-          $telephone = htmlspecialchars($_POST['telephone']);
-          $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
-
-          $erreur = NULL;
-          if (!isset($erreur)) {
-
-            $mail = new PHPMailer(true);
-
-            try {
-
-              $mail->isSMTP(); //Pour preciser que c'est du SMTP
-              $mail->Host = 'smtp.gmail.com';  // Le serveur smtp de google
-              $mail->SMTPAuth = true;                               // On active l'authentification
-              $mail->Username = 'pixncom@gmail.com';                 // SMTP username
-              $mail->Password = 'rngrwsjxomdvlubt';                           // Le mot de passe que vous avez récupéré
-              $mail->SMTPSecure = 'tls';                            // Parameter de sécurité mis sur TLS
-              $mail->Port = 587;                                    // Le port donne par google pour son SMTP
-
-              $mail->setFrom($email, $nom); // De qui est l' email
-              $mail->addReplyTo($email, $nom); // Option pour avoir le reply
-              $mail->addAddress('contact@pixncom.com'); //La boite mail où vous voulez recevoir les mails
-
-              $Body = "Nom: " . $nom . "\n";
-
-              $Body .= "Email: ";
-              $Body .= $email;
-              $Body .= "\r\n";
-
-              $Body .= "\n Telephone: ";
-              $Body .= $telephone;
-              $Body .= "\r\n";
-
-              $Body .= "Message: ";
-              $Body .= $message;
-              $Body .= "\r\n";
-
-              $mail->isHTML(); //Met le mail au format HTML
-              $mail->Subject = "formulaire pixncom"; // On parametre l'objet
-              $mail->Body = nl2br($Body); // Le message pour les boites html
-              $mail->AltBody = $Body; //Le message pour les boites non html
-              $mail->SMTPDebug = 0; //On désactive les logs de debug
-
-
-              if ($mail->send()) {
-                echo '<div id="popup1" class="overlay">
-                <div class="popup">
-                <a class="close" href="index.php">&times;</a>
-                <div class="content">
-                <div style="text-align: center;">Merci de nous avoir contacté !</div>
-                </div>
-                </div>
-                </div>';
-              } else {
-                $erreur = '<div id="popup1" class="overlay">
-                <div class="popup">
-                <a class="close" href="index.php">&times;</a>
-                <div class="content">
-                <div style="text-align: center;">Un problème est survenu !</div>
-                </div>
-                </div>
-                </div>';
-              }
-            } catch (Exception $e) {
-              $erreur = $e;
-            }
-          }
-        }
-        ?>
       </div>
     </div>
   </div>
@@ -313,7 +228,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <footer>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcP-K4iAAAAAI-eLBotx1JCBjGgcuUsofZdBtF4"></script>
+  <script>
+  grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6LcP-K4iAAAAAI-eLBotx1JCBjGgcuUsofZdBtF4', {action: 'login'}).then(function(token) {
+      document.getElementById('recaptchaResponse').value = token
+    });
+  });
+</script>
+<footer>
     <hr size="1" color="black">
     <div class="flex-container" id="div-footer">
       <div >
