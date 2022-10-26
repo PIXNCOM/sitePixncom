@@ -1,7 +1,7 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/index.php [NC,OR]
+RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/index.html [NC,OR]
 RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/ [NC,OR]
-RewriteCond %{HTTP_HOST} ^https://pixncom.com/index.php [NC,]
+RewriteCond %{HTTP_HOST} ^https://pixncom.com/index.html [NC,]
 RewriteRule ^(.*)$ http://pixncom.com/$1 [L,R=301,NC]
 
 RewriteEngine on

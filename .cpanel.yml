@@ -2,7 +2,7 @@
   deployment:
     tasks:
       - export DEPLOYPATH=/home/cp353596/public_html/
-      - /bin/cp index.php $DEPLOYPATH
+      - /bin/cp index.html $DEPLOYPATH
       - /bin/cp community-manager.html $DEPLOYPATH
       - /bin/cp developpement-web.html $DEPLOYPATH
       - /bin/cp creation-graphique.html $DEPLOYPATH
