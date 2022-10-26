@@ -7,7 +7,6 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
-ini_set('allow_url_fopen',1);
 $nom;$telephone;$email;$message;$captcha;
 $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_STRING);
 $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_STRING);

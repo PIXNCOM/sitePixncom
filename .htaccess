@@ -19,3 +19,5 @@ RewriteRule ^(.*)$ https://pixncom.com/contact.html/$1 [L,R=301,NC]
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^https://www.pixncom.com/community-manager.html [NC,OR]
 RewriteRule ^(.*)$ https://pixncom.com/community-manager.html/$1 [L,R=301,NC]
+
+php_value allow_url_fopen On
