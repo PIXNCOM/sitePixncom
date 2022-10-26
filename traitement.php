@@ -23,7 +23,7 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
  $secretKey = "6LcnNK8iAAAAADqPD_lCRIAF7BLQLk5A5FLRLud0";
  $ip = $_SERVER['REMOTE_ADDR'];
 
- $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+ $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
  $responseDebug = json_decode($response);
  $responseKeys = json_decode($response,true);
  header('Content-type: application/json');
@@ -65,6 +65,6 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
      $erreur = $e;
    }
  } else {
-   echo json_encode(array('success' => 'false', 'debug' => $responseDebug));
+   echo json_encode(array('success' => 'false', 'debug' => $responseDebug, 'ip' => $ip));
  }
  ?>
