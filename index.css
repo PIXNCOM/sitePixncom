@@ -48,6 +48,10 @@ img {
   height: auto;
 }
 
+.grecaptcha-badge {
+   visibility: hidden;
+}
+
 .titres {
   margin-top: 3%;
   text-align: center;
@@ -443,54 +447,53 @@ li a:hover:after {
 
 /* ---POPUP ENVOI FORMULAIRE--- */
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
+/* Popup container */
 .popup {
-  margin: 20% auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-  border: 2px solid rgb(252, 236, 180);
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
 }
 
-.popup h3 {
-  margin-top: 0;
-  color: rgb(0, 165, 146);
+/* The actual popup (appears on top) */
+.popup .popuptext {
+ visibility: hidden;
+ width: 260px;
+ background-color: #555;
+ color: #fff;
+ text-align: center;
+ border-radius: 6px;
+ padding: 8px 0;
+ position: absolute;
+ z-index: 1;
 }
-.popup .close {
-  position: absolute;
-  top: 20px;
-  margin: -30px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+ visibility: visible;
+ -webkit-animation: fadeIn 1s;
+ animation: fadeIn 1s
 }
-.popup .close:hover {
-  color: rgb(0, 165, 146);
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity: 1;}
 }
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+
+@keyframes fadeIn {
+ from {opacity: 0;}
+ to {opacity:1 ;}
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 
