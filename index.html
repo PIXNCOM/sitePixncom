@@ -232,7 +232,6 @@
   <script>
   // when form is submit
   $('#contactform').submit(function() {
-    console.log("test");
     // we stoped it
     event.preventDefault();
     var nom = $('#nom').val();
@@ -249,13 +248,15 @@
         $.post("traitement.php",{nom: nom, telephone: telephone, email: email, message: message, token: token}, function(result) {
           console.log(result);
           if(result.success) {
+            console.log("success");
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
           } else {
-            alert('Un problème est survenu')
+            console.log("failure");
+            alert('Un problème est survenu');
           }
         });
-      });;
+      });
     });
   });
   </script>
