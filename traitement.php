@@ -20,7 +20,7 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
    ';
    exit;
  }
- $secretKey = "6LcnNK8iAAAAADqPD_lCRIAF7BLQLk5A5FLRLud0";
+ $secretKey = "6LcV57QiAAAAADKsSdmlv_J201nQcK6sZVxPKuCB";
  $ip = $_SERVER['REMOTE_ADDR'];
 
  $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
