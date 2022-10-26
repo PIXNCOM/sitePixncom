@@ -76,6 +76,6 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
      $erreur = $e;
    }
  } else {
-   echo json_encode(array('success' => 'false'), 'response' => $response);
+   echo json_encode(array('success' => 'false', 'response' => $response));
  }
  ?>

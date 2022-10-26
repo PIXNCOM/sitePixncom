@@ -9,6 +9,7 @@
       - /bin/cp contact.html $DEPLOYPATH
       - /bin/cp index.css $DEPLOYPATH
       - /bin/cp app.js $DEPLOYPATH
+      - /bin/cp traitement.php $DEPLOYPATH
       - /bin/cp -R Assets $DEPLOYPATH
       - /bin/cp -R PHPMailer $DEPLOYPATH
       - /bin/cp sitemap.xml $DEPLOYPATH
