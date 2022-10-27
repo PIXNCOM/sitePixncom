@@ -247,7 +247,8 @@
         $('#contact').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
         $.post("traitement.php",{nom: nom, telephone: telephone, email: email, message: message, token: token}, function(result) {
           console.log(result);
-          if(result.some(item => item.success === 'true')) {
+          var res = JSON.parse(result);
+          if(res.success === 'true') {
             console.log("success");
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
@@ -268,7 +269,6 @@
     document.getElementById("contactform").reset();
   }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
 <footer>
     <hr size="1" color="black">
     <div class="flex-container" id="div-footer">
