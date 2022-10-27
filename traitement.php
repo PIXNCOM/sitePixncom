@@ -60,7 +60,7 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
      $mail->Password = 'rngrwsjxomdvlubt';                           // Le mot de passe que vous avez récupéré
      $mail->SMTPSecure = 'tls';                            // Parameter de sécurité mis sur TLS
      $mail->Port = 587;                                    // Le port donne par google pour son SMTP
-     $mail->addAddress('dev3@pixncom.com', 'pixncom'); //La boite mail où vous voulez recevoir les mails
+     $mail->addAddress('contact@pixncom.com', 'pixncom'); //La boite mail où vous voulez recevoir les mails
      $Body = "Nom: " . $nom . "\n";
 
      $Body .= "Email: " . $email . "\n";

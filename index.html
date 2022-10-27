@@ -246,13 +246,10 @@
         // add token to form
         $('#contact').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
         $.post("traitement.php",{nom: nom, telephone: telephone, email: email, message: message, token: token}, function(result) {
-          console.log(result);
           if(result.success) {
-            console.log("success");
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
           } else {
-            console.log("failure");
             alert('Un problème est survenu');
           }
         });
