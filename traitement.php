@@ -34,7 +34,6 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
    curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
    curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
    $response = curl_exec($verify);
-   echo json_encode(array('response' => $response));
    if (curl_errno($verify)) {
 			echo curl_error($verify);
 			die();
@@ -49,7 +48,6 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
  $responseDebug = json_decode($response);
  $responseKeys = json_decode($response,true);
  header('Content-type: application/json');
- echo json_encode(array('debug' => $responseDebug));
  if($responseKeys["success"]) {
 
 
@@ -82,12 +80,12 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
      if(!$mail->send()) {
        echo $mail->ErrorInfo;
      } else{
-       echo json_encode(array('success' => 'true'));
+       echo json_encode(array('success' => true));
      }
    } catch (Exception $e) {
      $erreur = $e;
    }
  } else {
-   echo json_encode(array('success' => 'false'));
+   echo json_encode(array('success' => false));
  }
  ?>
