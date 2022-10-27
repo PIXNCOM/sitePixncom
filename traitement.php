@@ -7,6 +7,7 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+
 $nom;$telephone;$email;$message;$captcha;
 $nom = filter_input(INPUT_POST, 'nom', FILTER_SANITIZE_STRING);
 $telephone = filter_input(INPUT_POST, 'telephone', FILTER_SANITIZE_STRING);
@@ -19,10 +20,19 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
    ';
    exit;
  }
- $secretKey = "6LcV57QiAAAAADKsSdmlv_J201nQcK6sZVxPKuCB";
+ $secretKey = "6LcnNK8iAAAAADqPD_lCRIAF7BLQLk5A5FLRLud0";
  $ip = $_SERVER['REMOTE_ADDR'];
-
- $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+ $data = array(
+             'secret' => $secretKey,
+             'response' => $captcha
+         );
+ $verify = curl_init();
+ curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+ curl_setopt($verify, CURLOPT_POST, true);
+ curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+ curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+ curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+ $response = curl_exec($verify);
  $responseDebug = json_decode($response);
  $responseKeys = json_decode($response,true);
  header('Content-type: application/json');
@@ -64,6 +74,6 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
      $erreur = $e;
    }
  } else {
-   echo json_encode(array('success' => 'false', 'debug' => $responseDebug, 'ip' => $ip));
+   echo json_encode(array('success' => 'false'));
  }
  ?>
