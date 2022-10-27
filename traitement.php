@@ -27,15 +27,28 @@ $captcha = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
              'response' => $captcha
          );
  $verify = curl_init();
- curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
- curl_setopt($verify, CURLOPT_POST, true);
- curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
- curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
- curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
- $response = curl_exec($verify);
+ try {
+   curl_setopt($verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify");
+   curl_setopt($verify, CURLOPT_POST, true);
+   curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+   curl_setopt($verify, CURLOPT_SSL_VERIFYPEER, false);
+   curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+   $response = curl_exec($verify);
+   if (curl_errno($verify)) {
+			echo curl_error($verify);
+			die();
+		}
+ }
+ catch(\Throwable $th) {
+   throw $th;
+ } finally {
+   curl_close($verify);
+ }
+
  $responseDebug = json_decode($response);
  $responseKeys = json_decode($response,true);
  header('Content-type: application/json');
+ echo json_encode(array('resonse' => $responseDebug));
  if($responseKeys["success"]) {
 
 

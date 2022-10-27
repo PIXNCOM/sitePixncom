@@ -247,7 +247,7 @@
         $('#contact').prepend('<input type="hidden" name="g-recaptcha-response" value="' + token + '">');
         $.post("traitement.php",{nom: nom, telephone: telephone, email: email, message: message, token: token}, function(result) {
           console.log(result);
-          if(result.success) {
+          if(result.success == "true") {
             console.log("success");
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
