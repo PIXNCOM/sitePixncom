@@ -11,7 +11,6 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 body {
@@ -396,7 +395,7 @@ li a:hover:after {
   padding-right: 2%;
 }
 .form-control{
-  margin: 10px;
+  margin-bottom: 10px;
   border: 1px solid black;
   margin-block-start: auto;
   align-items: flex-end;
@@ -414,6 +413,10 @@ li a:hover:after {
 #rgpd {
   vertical-align: top;
   margin-top: 8px;
+}
+
+#captchapol {
+  font-size: 80%;
 }
 
 .lienRGPD{
@@ -1143,5 +1146,10 @@ a {
     margin-top: 5%;
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  #captchapol {
+    font-weight: normal;
+    font-size: 70%;
   }
 }
